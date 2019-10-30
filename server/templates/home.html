@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<!-- {{ request.user }} -->
+<!-- {{ request.user.is_authenticated }} -->
+
+<!--  we will print about the context here, -->
+<!-- 
+<p>
+	{{ my_number }}, <br> {{ my_text }} ,<br> {{ my_list }}
+</p>
+ -->
+ <br>
+
+ <h1> {{ list.text }}</h1>
+
+ <h1> The latest reading that we received is : </h1>
+ <h2> 
+ 	{{ list.value }}
+ </h2>
+ <br>
+ <h1>The status of the light at the moment is</h1>
+ <h2>
+ 	{% if list.status == 1 %}
+ 		The light is ON
+ 	{% else %}
+ 		The light is OFF
+ 	{% endif %}
+ </h2>
+ <br>
+
+ <h1>The time right now is </h1>
+ <h2>
+ 	{{ list.time }} (UTC)
+ </h2>
+{% endblock %}
