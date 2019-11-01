@@ -1,24 +1,15 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.utils import timezone
+
 # here we will make our views from  the given data
 # I am guessing we will be receiving data using the admin thing
 # then we import it here, and the redirect it to our views I guess
-from .models import Reading
+from .models import Reading, Time
 
 import json
 
 # the functions get defined  here
-
-global Identity
-global val
-global stat
-
-
-Identity = 1
-val = 0
-stat = 0
-ab= 0
 
 now = timezone.now()
 
@@ -29,14 +20,24 @@ def checkreq(request):
 		print(request.body)
 		x = json.loads(request.body)['status']
 		y = json.loads(request.body)['value']
-		print(x)
-		print("HELLO WORLD")
+
 		now = timezone.now()
+		
 		obj = Reading(value = y , status = x)
-		obj.save()
-		global Identity
-		Identity = obj.id 
-		# ab = 1
+
+		obj.save()	
+
+		# now we update time 
+		if x == 1:
+			obj = Time.objects.get(id=1)
+			obj.total_time += float(1/6)
+			obj.save()
+
+		# now we update the identit
+		id_object = Identity.objects.get(id=1)
+		id_object.Identity  = obj.id
+		id_object.save()
+		# so now  we have the identity of the new object
 
 		context = {
 			"list" : {
@@ -47,13 +48,9 @@ def checkreq(request):
 			},
 		}
 		print(Identity)
-		return HttpResponse("<h1>POST request intercepted successfully</h1>")
+		return HttpResponse(status=201)
 	else:
 		return HttpResponse("<h1>GET request intercepted successfully</h1>")
-
-
-
-
 
 
 def home_view(request, *args, **kwargs):
@@ -62,11 +59,16 @@ def home_view(request, *args, **kwargs):
 	print(Identity)
 	print(ab)
 	
-	obj = Reading.objects.get(id = Identity)
+	id_object = Identity.objects.get(id=1)
+	id_to_be_showed = id_object.Identity
+
+	obj = Reading.objects.get(id = id_to_be_showed)
+
 	val = obj.value
 	stat = obj.status
 	context = {
 		"list" : {
+			"id":id_to_be_showed,
 			"value" :val,
 			"status" : stat,
 			"time" : now 
