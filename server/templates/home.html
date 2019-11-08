@@ -1,122 +1,79 @@
-{% extends 'base.html' %}
+{% extends 'base.html' %} {% block content %}
 
-{% block content %}
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
 <div class="container h-75 w-100">
-	<div class="row h-100">
-		<div class="col-12 col-md-8 w-100 bg-primary" id="graph">
-			
-		</div>
-		{% if list.status == 1 %}
-		<div class="col-12 col-md-4 bg-dark text-white">
-		{% else %}
-		<div class="col-12 col-md-4 bg-light text-dark">
-		{% endif %}
-			<div class="container d-flex h-100 align-items-center"> 
-				<div class="col text-center">
-					<h1>
-						{% if list.status == 1 %}
-							The light is
-							<h1><b>ON</b></h1>
-						{% else %}
-							The light is 
-							<h1><b>OFF</b></h1>
-						{% endif %}					
-					</h1>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
+  <div class="row h-100">
+    <div class="col-12 col-md-8 w-100 bg-primary"><p><div class="chartjs-wrapper"><canvas id="chartjs-0" class="chartjs" width="undefined" height="undefined"></canvas></div></p>
+    </div>
+    {% if list.status == 1 %}
+    <div class="col-12 col-md-4 bg-dark text-white">
+      {% else %}
+      <div class="col-12 col-md-4 bg-light text-dark">
+        {% endif %}
+        <div class="container d-flex h-100 align-items-center">
+          <div class="col text-center">
+            <h1>
+              {% if list.status == 1 %} The light is ON {% else %} The light is
+              OFF {% endif %}
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-<div class="container mt-5">
-	<div class="row">
-		<div class="col">
-			<h2><b>Latest Reading Report:</b></h2>
-		</div>
-	</div>
-	<div class="row pt-5">
-		<div class="col">
-			<h4 class="d-inline pr-3"><b>Sensor Reading:</b></h4>
-			{{ list.value }}
-		</div>
-	</div>
-	<div class="row">
-		<div class="col">
-			<h4 class="d-inline pr-3"><b>ID:</b></h4>
-			{{ list.id }}
-		</div>
-	</div>
-	<div class="row">
-		<div class="col">
-			<h4 class="d-inline pr-3"><b>Time:</b></h4>
-			{{ list.time }} (UTC)
-		</div>
-	</div>
-</div>
+  <div class="container pt-5">
+    <div class="row">
+      <div class="col">
+        <h2><b>Latest Reading Report:</b></h2>
+      </div>
+    </div>
+    <div class="row pt-5">
+      <div class="col">
+        <h4 class="d-inline pr-3"><b>Sensor Reading:</b></h4>
+        {{ list.value }}
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <h4 class="d-inline pr-3"><b>ID:</b></h4>
+        {{ list.id }}
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <h4 class="d-inline pr-3"><b>Time:</b></h4>
+        {{ list.time }} (UTC)
+      </div>
+    </div>
+  </div>
 
-<div class="container my-5 bg-secondary">
-	<div class="row p-5">
-		<div class="col text-white">
-			<h2><b>The light has been on for a total time of {{ list.total_time }} hours</b></h2>
-		</div>
-	</div>
+  <div class="container mt-5 bg-secondary">
+    <div class="row p-5">
+      <div class="col text-white">
+        <h2>
+          <b
+            >The light has been on for a total time of
+            {{ list.total_time }} hours</b
+          >
+        </h2>
+      </div>
+    </div>
+  </div>
 </div>
-
 <script>
-		// set the dimensions and margins of the graph
-		var margin = {top: 20, right: 20, bottom: 30, left: 50},
-		width = 960 - margin.left - margin.right,
-    	height = 500 - margin.top - margin.bottom;
-
-		// set the ranges
-		var x = d3.scaleTime().range([0, 144]);
-		var y = d3.scaleLinear().range([4000, 0]);
-
-		// define the line
-		var valueline = d3.line()
-		   .x(function(d) { return x(d.year); })
-		   .y(function(d) { return y(d.population); });
-
-		// append the svg obgect to the body of the page
-		// appends a 'group' element to 'svg'
-		// moves the 'group' element to the top left margin
-		var svg = d3.select("#graph").append("svg")
-		.attr("preserveAspectRatio", "xMinYMin meet")
-		.attr("viewBox", "0 0 960 500")
-		.append("g").attr("transform",
-		 "translate(" + margin.left + "," + margin.top + ")");
-
-		// Get the data
-		d3.csv("data.csv", function(error, data) {
-		   if (error) throw error;
-		   // format the data
-		   data.forEach(function(d) {
-			  d.year = d.year;
-			  d.population = +d.population;
-		   });
-
-		   // Scale the range of the data
-		   x.domain(d3.extent(data, function(d) { return d.year; }));
-		   y.domain([0, d3.max(data, function(d) { return d.population; })]);
-
-		   // Add the valueline path.
-		   svg.append("path")
-			  .data([data])
-			  .attr("class", "line")
-			  .attr("d", valueline);
-
-		   // Add the X Axis
-		   svg.append("g")
-			  .attr("transform", "translate(0," + height + ")")
-			  .call(d3.axisBottom(x));
-
-		   // Add the Y Axis
-		   svg.append("g")
-			  .call(d3.axisLeft(y));
-		});
-	 </script>
-
-
-
-{% endblock %}
+  function myFunc() {
+	new Chart(document.getElementById("chartjs-0"),{
+		"type":"line",
+		"data":{"labels":["January","February","March","April","May","June","July"],
+				"datasets":[{"label":"My First Dataset",
+				"data":[65,59,80,81,56,55,40],
+				"fill":false,
+				"borderColor":"rgb(75, 192, 192)",
+				"lineTension":0.1}]},
+		"options":{}
+	});
+  }
+  window.onload = myFunc;
+</script>
+{%endblock%}
