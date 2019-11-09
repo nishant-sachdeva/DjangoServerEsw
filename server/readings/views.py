@@ -124,7 +124,10 @@ def home_view(request, *args, **kwargs):
 	# now = timezone.now() 
 
 	l = []
-	s = Reading.objects
+	s = s[s.count()-50:]
+	for a in s:
+		l.append(a['value'])
+
 	context = {
 		"list" : {
 			"id":id_to_be_showed,
@@ -133,6 +136,7 @@ def home_view(request, *args, **kwargs):
 			"time" : now ,
 			"total_time" : round(time_obj.total_time , 2),
 			"redirect_url" : "https://localhost:8000/"
+			"set_of_values" : l
 		},
 	}	
 	return render(request, "home.html", context)
