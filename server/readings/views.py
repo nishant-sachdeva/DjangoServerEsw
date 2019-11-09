@@ -14,6 +14,31 @@ import pytz
 
 # the functions get defined  here
 
+
+import requests
+import time
+import urllib
+
+TOKEN = "1022794746:AAHt1VVurUQZdpNb8MFeQVVmeceKGyk_soQ"
+URL = "https://api.telegram.org/bot{}/".format(TOKEN)
+
+
+
+def get_url(url):
+    response = requests.get(url)
+    content = response.content.decode("utf8")
+    return content
+def send_message(text, chat_id):
+    text = urllib.parse.quote_plus(text)
+    url = URL + "sendMessage?text={}&chat_id={}".format(text, chat_id)
+    get_url(url)
+
+
+def call_bot(status):
+    send_message(status, 746780062)
+    send_message(status, 932176409)
+    send_message(status, 659265902)
+
 def checkreq(request):
 	'''
 	so here's the deal, this guy takes in the request and works on it
@@ -53,6 +78,11 @@ def checkreq(request):
 		id_object = Identity.objects.get(id=1)
 		id_object.Identity  = reading_obj.id
 		id_object.save()
+
+		if reading_obj.status == 1 :
+			call_bot("Lights are on")
+		else:
+			call_bot("lights are off")
 		# so now  we have the identity of the new object
 
 		return HttpResponse(status=201)
@@ -93,6 +123,11 @@ def home_view(request, *args, **kwargs):
 	now = current_time.astimezone(pytz.timezone("Asia/Kolkata"))
 	# now = timezone.now() 
 
+	l = []
+	s = s[s.count()-50:]
+	for a in s:
+		l.append(a['value'])
+
 	context = {
 		"list" : {
 			"id":id_to_be_showed,
@@ -101,6 +136,7 @@ def home_view(request, *args, **kwargs):
 			"time" : now ,
 			"total_time" : round(time_obj.total_time , 2),
 			"redirect_url" : "https://localhost:8000/"
+			"set_of_values" : l
 		},
 	}	
 	return render(request, "home.html", context)

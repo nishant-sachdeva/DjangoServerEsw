@@ -1,0 +1,2405 @@
+2019-11-06 11:50:09 *** Starting uWSGI 2.0.17.1 (64bit) on [Wed Nov  6 11:50:07 2019] ***
+2019-11-06 11:50:09 compiled with version: 5.4.0 20160609 on 22 July 2019 12:42:05
+2019-11-06 11:50:09 os: Linux-4.4.0-1087-aws #98 SMP Mon Jul 22 11:53:46 UTC 2019
+2019-11-06 11:50:09 nodename: blue-liveweb8
+2019-11-06 11:50:09 machine: x86_64
+2019-11-06 11:50:09 clock source: unix
+2019-11-06 11:50:09 pcre jit disabled
+2019-11-06 11:50:09 detected number of CPU cores: 2
+2019-11-06 11:50:09 current working directory: (unreachable)/etc/uwsgi/vassals
+2019-11-06 11:50:09 detected binary path: /usr/local/bin/uwsgi
+2019-11-06 11:50:09 *** dumping internal routing table ***
+2019-11-06 11:50:09 [rule: 0] subject: path_info regexp: \.svgz$ action: addheader:Content-Encoding:gzip
+2019-11-06 11:50:09 *** end of the internal routing table ***
+2019-11-06 11:50:09 chdir() to /home/nishantsachdeva/DjangoServerEsw/server
+2019-11-06 11:50:09 limiting number of processes to 60...
+2019-11-06 11:50:09 your processes number limit is 60
+2019-11-06 11:50:09 your memory page size is 4096 bytes
+2019-11-06 11:50:09 detected max file descriptor number: 123456
+2019-11-06 11:50:09 building mime-types dictionary from file /etc/mime.types...
+2019-11-06 11:50:09 552 entry found
+2019-11-06 11:50:09 lock engine: pthread robust mutexes
+2019-11-06 11:50:09 thunder lock: disabled (you can enable it with --thunder-lock)
+2019-11-06 11:50:09 uwsgi socket 0 bound to UNIX address /var/sockets/nishantsachdeva.pythonanywhere.com/socket fd 3
+2019-11-06 11:50:09 Python version: 3.6.6 (default, Aug 22 2018, 20:46:46)  [GCC 5.4.0 20160609]
+2019-11-06 11:50:09 Set PythonHome to /home/nishantsachdeva/.virtualenvs/myvirtualenv
+2019-11-06 11:50:09 *** Python threads support is disabled. You can enable it with --enable-threads ***
+2019-11-06 11:50:09 Python main interpreter initialized at 0x1f6e1f0
+2019-11-06 11:50:09 your server socket listen backlog is limited to 100 connections
+2019-11-06 11:50:09 your mercy for graceful operations on workers is 60 seconds
+2019-11-06 11:50:09 setting request body buffering size to 65536 bytes
+2019-11-06 11:50:09 mapped 334256 bytes (326 KB) for 1 cores
+2019-11-06 11:50:09 *** Operational MODE: single process ***
+2019-11-06 11:50:09 initialized 38 metrics
+2019-11-06 11:50:09 WSGI app 0 (mountpoint='') ready in 2 seconds on interpreter 0x1f6e1f0 pid: 1 (default app)
+2019-11-06 11:50:09 *** uWSGI is running in multiple interpreter mode ***
+2019-11-06 11:50:09 gracefully (RE)spawned uWSGI master process (pid: 1)
+2019-11-06 11:50:09 spawned uWSGI worker 1 (pid: 3, cores: 1)
+2019-11-06 11:50:09 metrics collector thread started
+2019-11-06 11:50:09 spawned 2 offload threads for uWSGI worker 1
+2019-11-06 11:50:11 b'{"value":1925, "status":1}'
+2019-11-06 11:50:11 1
+2019-11-06 11:50:11 HELLO WORLD
+2019-11-06 11:50:11 223
+2019-11-06 11:50:11 Wed Nov  6 11:50:11 2019 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /reading/ (ip 10.0.0.14) !!!
+2019-11-06 11:50:11 Wed Nov  6 11:50:11 2019 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during POST /reading/ (10.0.0.14)
+2019-11-06 11:50:11 announcing my loyalty to the Emperor...
+2019-11-06 11:50:11 b'{"value":1526, "status":1}'
+2019-11-06 11:50:11 1
+2019-11-06 11:50:11 HELLO WORLD
+2019-11-06 11:50:11 224
+2019-11-06 11:50:14 b'{"value":1219, "status":1}'
+2019-11-06 11:50:14 1
+2019-11-06 11:50:14 HELLO WORLD
+2019-11-06 11:50:14 225
+2019-11-06 11:50:17 b'{"value":974, "status":1}'
+2019-11-06 11:50:17 1
+2019-11-06 11:50:17 HELLO WORLD
+2019-11-06 11:50:17 226
+2019-11-06 11:50:19 b'{"value":716, "status":1}'
+2019-11-06 11:50:19 1
+2019-11-06 11:50:19 HELLO WORLD
+2019-11-06 11:50:19 227
+2019-11-06 11:50:22 b'{"value":526, "status":1}'
+2019-11-06 11:50:22 1
+2019-11-06 11:50:22 HELLO WORLD
+2019-11-06 11:50:22 228
+2019-11-06 11:50:24 b'{"value":387, "status":1}'
+2019-11-06 11:50:24 1
+2019-11-06 11:50:24 HELLO WORLD
+2019-11-06 11:50:24 229
+2019-11-06 11:50:29 b'{"value":791, "status":1}'
+2019-11-06 11:50:29 1
+2019-11-06 11:50:29 HELLO WORLD
+2019-11-06 11:50:29 231
+2019-11-06 11:50:32 b'{"value":1187, "status":1}'
+2019-11-06 11:50:32 1
+2019-11-06 11:50:32 HELLO WORLD
+2019-11-06 11:50:32 232
+2019-11-06 11:50:34 b'{"value":883, "status":1}'
+2019-11-06 11:50:34 1
+2019-11-06 11:50:34 HELLO WORLD
+2019-11-06 11:50:35 233
+2019-11-06 11:50:40 b'{"value":477, "status":1}'
+2019-11-06 11:50:40 1
+2019-11-06 11:50:40 HELLO WORLD
+2019-11-06 11:50:41 235
+2019-11-06 11:50:47 b'{"value":257, "status":1}'
+2019-11-06 11:50:47 1
+2019-11-06 11:50:47 HELLO WORLD
+2019-11-06 11:50:47 237
+2019-11-06 11:50:50 b'{"value":189, "status":1}'
+2019-11-06 11:50:50 1
+2019-11-06 11:50:50 HELLO WORLD
+2019-11-06 11:50:50 238
+2019-11-06 11:50:53 b'{"value":139, "status":1}'
+2019-11-06 11:50:53 1
+2019-11-06 11:50:53 HELLO WORLD
+2019-11-06 11:50:53 239
+2019-11-06 11:50:56 b'{"value":102, "status":1}'
+2019-11-06 11:50:56 1
+2019-11-06 11:50:56 HELLO WORLD
+2019-11-06 11:50:56 240
+2019-11-06 11:50:59 b'{"value":77, "status":1}'
+2019-11-06 11:50:59 1
+2019-11-06 11:50:59 HELLO WORLD
+2019-11-06 11:50:59 241
+2019-11-06 11:51:01 b'{"value":56, "status":1}'
+2019-11-06 11:51:01 1
+2019-11-06 11:51:01 HELLO WORLD
+2019-11-06 11:51:02 242
+2019-11-06 11:51:04 b'{"value":832, "status":1}'
+2019-11-06 11:51:04 1
+2019-11-06 11:51:04 HELLO WORLD
+2019-11-06 11:51:04 243
+2019-11-06 11:51:07 b'{"value":611, "status":1}'
+2019-11-06 11:51:07 1
+2019-11-06 11:51:07 HELLO WORLD
+2019-11-06 11:51:07 244
+2019-11-06 11:51:10 b'{"value":449, "status":1}'
+2019-11-06 11:51:10 1
+2019-11-06 11:51:10 HELLO WORLD
+2019-11-06 11:51:10 245
+2019-11-06 11:51:12 b'{"value":330, "status":1}'
+2019-11-06 11:51:12 1
+2019-11-06 11:51:12 HELLO WORLD
+2019-11-06 11:51:12 246
+2019-11-06 11:51:15 b'{"value":249, "status":1}'
+2019-11-06 11:51:15 1
+2019-11-06 11:51:15 HELLO WORLD
+2019-11-06 11:51:15 247
+2019-11-06 11:51:17 b'{"value":183, "status":1}'
+2019-11-06 11:51:17 1
+2019-11-06 11:51:17 HELLO WORLD
+2019-11-06 11:51:17 248
+2019-11-06 11:51:20 b'{"value":134, "status":1}'
+2019-11-06 11:51:20 1
+2019-11-06 11:51:20 HELLO WORLD
+2019-11-06 11:51:20 249
+2019-11-06 11:51:22 b'{"value":99, "status":1}'
+2019-11-06 11:51:22 1
+2019-11-06 11:51:22 HELLO WORLD
+2019-11-06 11:51:22 250
+2019-11-06 11:51:24 b'{"value":73, "status":1}'
+2019-11-06 11:51:24 1
+2019-11-06 11:51:24 HELLO WORLD
+2019-11-06 11:51:25 251
+2019-11-06 11:51:27 b'{"value":53, "status":1}'
+2019-11-06 11:51:27 1
+2019-11-06 11:51:27 HELLO WORLD
+2019-11-06 11:51:27 252
+2019-11-06 11:51:29 b'{"value":39, "status":1}'
+2019-11-06 11:51:29 1
+2019-11-06 11:51:29 HELLO WORLD
+2019-11-06 11:51:29 253
+2019-11-06 11:51:32 b'{"value":560, "status":1}'
+2019-11-06 11:51:32 1
+2019-11-06 11:51:32 HELLO WORLD
+2019-11-06 11:51:32 254
+2019-11-06 11:51:34 b'{"value":421, "status":1}'
+2019-11-06 11:51:34 1
+2019-11-06 11:51:34 HELLO WORLD
+2019-11-06 11:51:34 255
+2019-11-06 11:51:37 b'{"value":431, "status":1}'
+2019-11-06 11:51:37 1
+2019-11-06 11:51:37 HELLO WORLD
+2019-11-06 11:51:37 256
+2019-11-06 11:51:39 b'{"value":317, "status":1}'
+2019-11-06 11:51:39 1
+2019-11-06 11:51:39 HELLO WORLD
+2019-11-06 11:51:39 257
+2019-11-06 11:51:41 b'{"value":233, "status":1}'
+2019-11-06 11:51:41 1
+2019-11-06 11:51:41 HELLO WORLD
+2019-11-06 11:51:41 258
+2019-11-06 11:51:44 b'{"value":171, "status":1}'
+2019-11-06 11:51:44 1
+2019-11-06 11:51:44 HELLO WORLD
+2019-11-06 11:51:44 259
+2019-11-06 11:51:46 b'{"value":126, "status":1}'
+2019-11-06 11:51:46 1
+2019-11-06 11:51:46 HELLO WORLD
+2019-11-06 11:51:46 260
+2019-11-06 11:51:49 b'{"value":92, "status":1}'
+2019-11-06 11:51:49 1
+2019-11-06 11:51:49 HELLO WORLD
+2019-11-06 11:51:49 261
+2019-11-06 11:51:51 b'{"value":68, "status":1}'
+2019-11-06 11:51:51 1
+2019-11-06 11:51:51 HELLO WORLD
+2019-11-06 11:51:51 262
+2019-11-06 11:51:54 b'{"value":50, "status":1}'
+2019-11-06 11:51:54 1
+2019-11-06 11:51:54 HELLO WORLD
+2019-11-06 11:51:54 263
+2019-11-06 11:51:56 b'{"value":36, "status":1}'
+2019-11-06 11:51:56 1
+2019-11-06 11:51:56 HELLO WORLD
+2019-11-06 11:51:56 264
+2019-11-06 11:51:59 b'{"value":27, "status":1}'
+2019-11-06 11:51:59 1
+2019-11-06 11:51:59 HELLO WORLD
+2019-11-06 11:51:59 265
+2019-11-06 11:52:01 b'{"value":19, "status":1}'
+2019-11-06 11:52:01 1
+2019-11-06 11:52:01 HELLO WORLD
+2019-11-06 11:52:01 266
+2019-11-06 11:52:04 b'{"value":14, "status":1}'
+2019-11-06 11:52:04 1
+2019-11-06 11:52:04 HELLO WORLD
+2019-11-06 11:52:04 267
+2019-11-06 11:52:06 b'{"value":17, "status":1}'
+2019-11-06 11:52:06 1
+2019-11-06 11:52:06 HELLO WORLD
+2019-11-06 11:52:06 268
+2019-11-06 11:52:09 b'{"value":13, "status":1}'
+2019-11-06 11:52:09 1
+2019-11-06 11:52:09 HELLO WORLD
+2019-11-06 11:52:09 269
+2019-11-06 11:52:11 b'{"value":9, "status":1}'
+2019-11-06 11:52:11 1
+2019-11-06 11:52:11 HELLO WORLD
+2019-11-06 11:52:11 270
+2019-11-06 11:52:14 b'{"value":7, "status":1}'
+2019-11-06 11:52:14 1
+2019-11-06 11:52:14 HELLO WORLD
+2019-11-06 11:52:14 271
+2019-11-06 11:52:16 b'{"value":5, "status":1}'
+2019-11-06 11:52:16 1
+2019-11-06 11:52:16 HELLO WORLD
+2019-11-06 11:52:16 272
+2019-11-06 11:52:18 b'{"value":3, "status":1}'
+2019-11-06 11:52:18 1
+2019-11-06 11:52:18 HELLO WORLD
+2019-11-06 11:52:18 273
+2019-11-06 11:52:21 b'{"value":2, "status":1}'
+2019-11-06 11:52:21 1
+2019-11-06 11:52:21 HELLO WORLD
+2019-11-06 11:52:21 274
+2019-11-06 11:52:24 b'{"value":9, "status":1}'
+2019-11-06 11:52:24 1
+2019-11-06 11:52:24 HELLO WORLD
+2019-11-06 11:52:24 275
+2019-11-06 11:52:27 b'{"value":6, "status":1}'
+2019-11-06 11:52:27 1
+2019-11-06 11:52:27 HELLO WORLD
+2019-11-06 11:52:27 276
+2019-11-06 11:52:29 b'{"value":5, "status":1}'
+2019-11-06 11:52:29 1
+2019-11-06 11:52:29 HELLO WORLD
+2019-11-06 11:52:29 277
+2019-11-06 11:52:32 b'{"value":3, "status":1}'
+2019-11-06 11:52:32 1
+2019-11-06 11:52:32 HELLO WORLD
+2019-11-06 11:52:32 278
+2019-11-06 11:52:34 b'{"value":2, "status":1}'
+2019-11-06 11:52:34 1
+2019-11-06 11:52:34 HELLO WORLD
+2019-11-06 11:52:34 279
+2019-11-06 11:52:37 b'{"value":95, "status":1}'
+2019-11-06 11:52:37 1
+2019-11-06 11:52:37 HELLO WORLD
+2019-11-06 11:52:37 280
+2019-11-06 11:52:39 b'{"value":99, "status":1}'
+2019-11-06 11:52:39 1
+2019-11-06 11:52:39 HELLO WORLD
+2019-11-06 11:52:39 281
+2019-11-06 11:52:42 b'{"value":73, "status":1}'
+2019-11-06 11:52:42 1
+2019-11-06 11:52:42 HELLO WORLD
+2019-11-06 11:52:42 282
+2019-11-06 11:53:07 b'{"value":1926, "status":1}'
+2019-11-06 11:53:07 1
+2019-11-06 11:53:07 HELLO WORLD
+2019-11-06 11:53:07 283
+2019-11-06 11:53:09 b'{"value":1416, "status":1}'
+2019-11-06 11:53:09 1
+2019-11-06 11:53:09 HELLO WORLD
+2019-11-06 11:53:09 284
+2019-11-06 11:53:12 b'{"value":1040, "status":1}'
+2019-11-06 11:53:12 1
+2019-11-06 11:53:12 HELLO WORLD
+2019-11-06 11:53:12 285
+2019-11-06 11:53:15 b'{"value":765, "status":1}'
+2019-11-06 11:53:15 1
+2019-11-06 11:53:15 HELLO WORLD
+2019-11-06 11:53:15 286
+2019-11-06 11:53:18 b'{"value":562, "status":1}'
+2019-11-06 11:53:18 1
+2019-11-06 11:53:18 HELLO WORLD
+2019-11-06 11:53:18 287
+2019-11-06 11:53:20 b'{"value":413, "status":1}'
+2019-11-06 11:53:20 1
+2019-11-06 11:53:20 HELLO WORLD
+2019-11-06 11:53:20 288
+2019-11-06 11:53:23 b'{"value":303, "status":1}'
+2019-11-06 11:53:23 1
+2019-11-06 11:53:23 HELLO WORLD
+2019-11-06 11:53:23 289
+2019-11-06 11:53:26 b'{"value":223, "status":1}'
+2019-11-06 11:53:26 1
+2019-11-06 11:53:26 HELLO WORLD
+2019-11-06 11:53:26 290
+2019-11-06 11:53:29 b'{"value":164, "status":1}'
+2019-11-06 11:53:29 1
+2019-11-06 11:53:29 HELLO WORLD
+2019-11-06 11:53:29 291
+2019-11-06 11:53:31 b'{"value":120, "status":1}'
+2019-11-06 11:53:31 1
+2019-11-06 11:53:31 HELLO WORLD
+2019-11-06 11:53:31 292
+2019-11-06 11:53:33 b'{"value":88, "status":1}'
+2019-11-06 11:53:33 1
+2019-11-06 11:53:33 HELLO WORLD
+2019-11-06 11:53:34 293
+2019-11-06 11:53:36 b'{"value":65, "status":1}'
+2019-11-06 11:53:36 1
+2019-11-06 11:53:36 HELLO WORLD
+2019-11-06 11:53:36 294
+2019-11-06 11:53:39 b'{"value":47, "status":1}'
+2019-11-06 11:53:39 1
+2019-11-06 11:53:39 HELLO WORLD
+2019-11-06 11:53:39 295
+2019-11-06 11:53:41 b'{"value":35, "status":1}'
+2019-11-06 11:53:41 1
+2019-11-06 11:53:41 HELLO WORLD
+2019-11-06 11:53:41 296
+2019-11-06 11:53:44 b'{"value":25, "status":1}'
+2019-11-06 11:53:44 1
+2019-11-06 11:53:44 HELLO WORLD
+2019-11-06 11:53:44 297
+2019-11-06 11:53:46 b'{"value":19, "status":1}'
+2019-11-06 11:53:46 1
+2019-11-06 11:53:46 HELLO WORLD
+2019-11-06 11:53:46 298
+2019-11-06 11:53:49 b'{"value":14, "status":1}'
+2019-11-06 11:53:49 1
+2019-11-06 11:53:49 HELLO WORLD
+2019-11-06 11:53:49 299
+2019-11-06 11:53:51 b'{"value":10, "status":1}'
+2019-11-06 11:53:51 1
+2019-11-06 11:53:51 HELLO WORLD
+2019-11-06 11:53:51 300
+2019-11-06 11:53:53 b'{"value":7, "status":1}'
+2019-11-06 11:53:53 1
+2019-11-06 11:53:53 HELLO WORLD
+2019-11-06 11:53:53 301
+2019-11-06 11:53:56 b'{"value":5, "status":1}'
+2019-11-06 11:53:56 1
+2019-11-06 11:53:56 HELLO WORLD
+2019-11-06 11:53:56 302
+2019-11-06 11:53:58 b'{"value":4, "status":1}'
+2019-11-06 11:53:58 1
+2019-11-06 11:53:58 HELLO WORLD
+2019-11-06 11:53:58 303
+2019-11-06 11:54:00 b'{"value":3, "status":1}'
+2019-11-06 11:54:00 1
+2019-11-06 11:54:00 HELLO WORLD
+2019-11-06 11:54:00 304
+2019-11-06 11:54:03 b'{"value":2, "status":1}'
+2019-11-06 11:54:03 1
+2019-11-06 11:54:03 HELLO WORLD
+2019-11-06 11:54:03 305
+2019-11-06 11:54:06 b'{"value":1, "status":1}'
+2019-11-06 11:54:06 1
+2019-11-06 11:54:06 HELLO WORLD
+2019-11-06 11:54:06 306
+2019-11-06 11:54:08 b'{"value":1, "status":1}'
+2019-11-06 11:54:08 1
+2019-11-06 11:54:08 HELLO WORLD
+2019-11-06 11:54:08 307
+2019-11-06 11:54:10 b'{"value":0, "status":1}'
+2019-11-06 11:54:10 1
+2019-11-06 11:54:10 HELLO WORLD
+2019-11-06 11:54:10 308
+2019-11-06 11:54:13 b'{"value":0, "status":1}'
+2019-11-06 11:54:13 1
+2019-11-06 11:54:13 HELLO WORLD
+2019-11-06 11:54:13 309
+2019-11-06 11:54:15 b'{"value":0, "status":1}'
+2019-11-06 11:54:15 1
+2019-11-06 11:54:15 HELLO WORLD
+2019-11-06 11:54:15 310
+2019-11-06 11:54:17 b'{"value":0, "status":1}'
+2019-11-06 11:54:17 1
+2019-11-06 11:54:17 HELLO WORLD
+2019-11-06 11:54:18 311
+2019-11-06 11:54:20 b'{"value":0, "status":1}'
+2019-11-06 11:54:20 1
+2019-11-06 11:54:20 HELLO WORLD
+2019-11-06 11:54:20 312
+2019-11-06 11:54:23 b'{"value":0, "status":1}'
+2019-11-06 11:54:23 1
+2019-11-06 11:54:23 HELLO WORLD
+2019-11-06 11:54:23 313
+2019-11-06 11:54:26 b'{"value":0, "status":1}'
+2019-11-06 11:54:26 1
+2019-11-06 11:54:26 HELLO WORLD
+2019-11-06 11:54:26 314
+2019-11-06 11:54:28 b'{"value":0, "status":1}'
+2019-11-06 11:54:28 1
+2019-11-06 11:54:28 HELLO WORLD
+2019-11-06 11:54:28 315
+2019-11-06 11:54:31 b'{"value":0, "status":1}'
+2019-11-06 11:54:31 1
+2019-11-06 11:54:31 HELLO WORLD
+2019-11-06 11:54:31 316
+2019-11-06 11:54:34 b'{"value":0, "status":1}'
+2019-11-06 11:54:34 1
+2019-11-06 11:54:34 HELLO WORLD
+2019-11-06 11:54:34 317
+2019-11-06 11:54:36 b'{"value":0, "status":1}'
+2019-11-06 11:54:36 1
+2019-11-06 11:54:36 HELLO WORLD
+2019-11-06 11:54:36 318
+2019-11-06 11:54:39 b'{"value":0, "status":1}'
+2019-11-06 11:54:39 1
+2019-11-06 11:54:39 HELLO WORLD
+2019-11-06 11:54:39 319
+2019-11-06 11:54:42 b'{"value":0, "status":1}'
+2019-11-06 11:54:42 1
+2019-11-06 11:54:42 HELLO WORLD
+2019-11-06 11:54:42 320
+2019-11-06 11:54:45 b'{"value":0, "status":1}'
+2019-11-06 11:54:45 1
+2019-11-06 11:54:45 HELLO WORLD
+2019-11-06 11:54:45 321
+2019-11-06 11:54:47 b'{"value":0, "status":1}'
+2019-11-06 11:54:47 1
+2019-11-06 11:54:47 HELLO WORLD
+2019-11-06 11:54:47 322
+2019-11-06 11:54:50 b'{"value":0, "status":1}'
+2019-11-06 11:54:50 1
+2019-11-06 11:54:50 HELLO WORLD
+2019-11-06 11:54:50 323
+2019-11-06 14:04:07 *** Starting uWSGI 2.0.17.1 (64bit) on [Wed Nov  6 14:04:05 2019] ***
+2019-11-06 14:04:07 compiled with version: 5.4.0 20160609 on 22 July 2019 12:42:05
+2019-11-06 14:04:07 os: Linux-4.4.0-1087-aws #98 SMP Mon Jul 22 11:53:46 UTC 2019
+2019-11-06 14:04:07 nodename: blue-liveweb8
+2019-11-06 14:04:07 machine: x86_64
+2019-11-06 14:04:07 clock source: unix
+2019-11-06 14:04:07 pcre jit disabled
+2019-11-06 14:04:07 detected number of CPU cores: 2
+2019-11-06 14:04:07 current working directory: (unreachable)/etc/uwsgi/vassals
+2019-11-06 14:04:07 detected binary path: /usr/local/bin/uwsgi
+2019-11-06 14:04:07 *** dumping internal routing table ***
+2019-11-06 14:04:07 [rule: 0] subject: path_info regexp: \.svgz$ action: addheader:Content-Encoding:gzip
+2019-11-06 14:04:07 *** end of the internal routing table ***
+2019-11-06 14:04:07 chdir() to /home/nishantsachdeva/DjangoServerEsw/server
+2019-11-06 14:04:07 limiting number of processes to 60...
+2019-11-06 14:04:07 your processes number limit is 60
+2019-11-06 14:04:07 your memory page size is 4096 bytes
+2019-11-06 14:04:07 detected max file descriptor number: 123456
+2019-11-06 14:04:07 building mime-types dictionary from file /etc/mime.types...
+2019-11-06 14:04:07 552 entry found
+2019-11-06 14:04:07 lock engine: pthread robust mutexes
+2019-11-06 14:04:07 thunder lock: disabled (you can enable it with --thunder-lock)
+2019-11-06 14:04:07 uwsgi socket 0 bound to UNIX address /var/sockets/nishantsachdeva.pythonanywhere.com/socket fd 3
+2019-11-06 14:04:07 Python version: 3.6.6 (default, Aug 22 2018, 20:46:46)  [GCC 5.4.0 20160609]
+2019-11-06 14:04:07 Set PythonHome to /home/nishantsachdeva/.virtualenvs/myvirtualenv
+2019-11-06 14:04:07 *** Python threads support is disabled. You can enable it with --enable-threads ***
+2019-11-06 14:04:07 Python main interpreter initialized at 0x25471f0
+2019-11-06 14:04:07 your server socket listen backlog is limited to 100 connections
+2019-11-06 14:04:07 your mercy for graceful operations on workers is 60 seconds
+2019-11-06 14:04:07 setting request body buffering size to 65536 bytes
+2019-11-06 14:04:07 mapped 334256 bytes (326 KB) for 1 cores
+2019-11-06 14:04:07 *** Operational MODE: single process ***
+2019-11-06 14:04:07 initialized 38 metrics
+2019-11-06 14:04:07 WSGI app 0 (mountpoint='') ready in 2 seconds on interpreter 0x25471f0 pid: 1 (default app)
+2019-11-06 14:04:07 *** uWSGI is running in multiple interpreter mode ***
+2019-11-06 14:04:07 gracefully (RE)spawned uWSGI master process (pid: 1)
+2019-11-06 14:04:07 spawned uWSGI worker 1 (pid: 3, cores: 1)
+2019-11-06 14:04:07 metrics collector thread started
+2019-11-06 14:04:07 spawned 2 offload threads for uWSGI worker 1
+2019-11-06 14:04:09 <WSGIRequest: GET '/'>
+2019-11-06 14:04:09 1
+2019-11-06 14:04:09 0
+2019-11-06 14:04:09 announcing my loyalty to the Emperor...
+2019-11-06 14:04:09 Not Found: /favicon.ico
+2019-11-06 14:04:12 <WSGIRequest: GET '/'>
+2019-11-06 14:04:12 1
+2019-11-06 14:04:12 0
+2019-11-06 14:04:12 Not Found: /favicon.ico
+2019-11-06 14:04:15 <WSGIRequest: GET '/'>
+2019-11-06 14:04:15 1
+2019-11-06 14:04:15 0
+2019-11-06 14:04:16 <WSGIRequest: GET '/'>
+2019-11-06 14:04:16 1
+2019-11-06 14:04:16 0
+2019-11-06 14:04:17 <WSGIRequest: GET '/'>
+2019-11-06 14:04:17 1
+2019-11-06 14:04:17 0
+2019-11-06 14:04:17 Not Found: /favicon.ico
+2019-11-06 14:04:18 <WSGIRequest: GET '/'>
+2019-11-06 14:04:18 1
+2019-11-06 14:04:18 0
+2019-11-06 14:04:38 Not Found: /favicon.ico
+2019-11-06 14:04:43 <WSGIRequest: GET '/'>
+2019-11-06 14:04:43 1
+2019-11-06 14:04:43 0
+2019-11-06 14:04:53 <WSGIRequest: GET '/'>
+2019-11-06 14:04:53 1
+2019-11-06 14:04:53 0
+2019-11-06 14:04:54 <WSGIRequest: GET '/'>
+2019-11-06 14:04:54 1
+2019-11-06 14:04:54 0
+2019-11-06 14:04:55 <WSGIRequest: GET '/'>
+2019-11-06 14:04:55 1
+2019-11-06 14:04:55 0
+2019-11-06 14:04:55 Not Found: /favicon.ico
+2019-11-06 14:20:26 <WSGIRequest: GET '/'>
+2019-11-06 14:20:26 1
+2019-11-06 14:20:26 0
+2019-11-06 14:20:28 Not Found: /favicon.ico
+2019-11-06 14:20:41 <WSGIRequest: GET '/'>
+2019-11-06 14:20:41 1
+2019-11-06 14:20:41 0
+2019-11-07 06:05:43 <WSGIRequest: GET '/'>
+2019-11-07 06:05:43 1
+2019-11-07 06:05:43 0
+2019-11-07 06:05:46 <WSGIRequest: GET '/'>
+2019-11-07 06:05:46 1
+2019-11-07 06:05:46 0
+2019-11-07 06:06:44 b'{"value":45979791 , "status":1}'
+2019-11-07 06:06:44 1
+2019-11-07 06:06:44 HELLO WORLD
+2019-11-07 06:06:45 324
+2019-11-07 06:06:48 <WSGIRequest: GET '/'>
+2019-11-07 06:06:48 324
+2019-11-07 06:06:48 0
+2019-11-07 06:06:49 Not Found: /favicon.ico
+2019-11-07 07:55:55 <WSGIRequest: GET '/'>
+2019-11-07 07:55:55 324
+2019-11-07 07:55:55 0
+2019-11-07 07:55:56 Not Found: /favicon.ico
+2019-11-07 07:55:59 <WSGIRequest: GET '/'>
+2019-11-07 07:55:59 324
+2019-11-07 07:55:59 0
+2019-11-07 08:28:52 <WSGIRequest: GET '/'>
+2019-11-07 08:28:52 324
+2019-11-07 08:28:52 0
+2019-11-07 08:28:54 <WSGIRequest: GET '/'>
+2019-11-07 08:28:54 324
+2019-11-07 08:28:54 0
+2019-11-07 08:29:04 <WSGIRequest: GET '/'>
+2019-11-07 08:29:04 324
+2019-11-07 08:29:04 0
+2019-11-07 08:29:08 <WSGIRequest: GET '/'>
+2019-11-07 08:29:08 324
+2019-11-07 08:29:08 0
+2019-11-07 08:29:10 <WSGIRequest: GET '/'>
+2019-11-07 08:29:10 324
+2019-11-07 08:29:10 0
+2019-11-07 08:29:13 <WSGIRequest: GET '/'>
+2019-11-07 08:29:13 324
+2019-11-07 08:29:13 0
+2019-11-07 10:06:06 <WSGIRequest: GET '/'>
+2019-11-07 10:06:06 324
+2019-11-07 10:06:06 0
+2019-11-07 10:06:08 <WSGIRequest: GET '/'>
+2019-11-07 10:06:08 324
+2019-11-07 10:06:08 0
+2019-11-07 10:06:47 b'{"value":4533 , "status":0}'
+2019-11-07 10:06:47 0
+2019-11-07 10:06:47 HELLO WORLD
+2019-11-07 10:06:47 325
+2019-11-07 10:06:50 <WSGIRequest: GET '/'>
+2019-11-07 10:06:50 325
+2019-11-07 10:06:50 0
+2019-11-07 10:06:53 <WSGIRequest: GET '/'>
+2019-11-07 10:06:53 325
+2019-11-07 10:06:53 0
+2019-11-07 10:06:53 <WSGIRequest: GET '/'>
+2019-11-07 10:06:53 325
+2019-11-07 10:06:53 0
+2019-11-07 18:45:59 *** Starting uWSGI 2.0.17.1 (64bit) on [Thu Nov  7 18:45:54 2019] ***
+2019-11-07 18:45:59 compiled with version: 5.4.0 20160609 on 22 July 2019 12:42:05
+2019-11-07 18:45:59 os: Linux-4.4.0-1087-aws #98 SMP Mon Jul 22 11:53:46 UTC 2019
+2019-11-07 18:45:59 nodename: blue-liveweb8
+2019-11-07 18:45:59 machine: x86_64
+2019-11-07 18:45:59 clock source: unix
+2019-11-07 18:45:59 pcre jit disabled
+2019-11-07 18:45:59 detected number of CPU cores: 2
+2019-11-07 18:45:59 current working directory: (unreachable)/etc/uwsgi/vassals
+2019-11-07 18:45:59 detected binary path: /usr/local/bin/uwsgi
+2019-11-07 18:45:59 *** dumping internal routing table ***
+2019-11-07 18:45:59 [rule: 0] subject: path_info regexp: \.svgz$ action: addheader:Content-Encoding:gzip
+2019-11-07 18:45:59 *** end of the internal routing table ***
+2019-11-07 18:45:59 chdir() to /home/nishantsachdeva/DjangoServerEsw/server
+2019-11-07 18:45:59 limiting number of processes to 60...
+2019-11-07 18:45:59 your processes number limit is 60
+2019-11-07 18:45:59 your memory page size is 4096 bytes
+2019-11-07 18:45:59 detected max file descriptor number: 123456
+2019-11-07 18:45:59 building mime-types dictionary from file /etc/mime.types...
+2019-11-07 18:45:59 552 entry found
+2019-11-07 18:45:59 lock engine: pthread robust mutexes
+2019-11-07 18:45:59 thunder lock: disabled (you can enable it with --thunder-lock)
+2019-11-07 18:45:59 uwsgi socket 0 bound to UNIX address /var/sockets/nishantsachdeva.pythonanywhere.com/socket fd 3
+2019-11-07 18:45:59 Python version: 3.6.6 (default, Aug 22 2018, 20:46:46)  [GCC 5.4.0 20160609]
+2019-11-07 18:45:59 Set PythonHome to /home/nishantsachdeva/.virtualenvs/myvirtualenv
+2019-11-07 18:45:59 *** Python threads support is disabled. You can enable it with --enable-threads ***
+2019-11-07 18:45:59 Python main interpreter initialized at 0x1f421f0
+2019-11-07 18:45:59 your server socket listen backlog is limited to 100 connections
+2019-11-07 18:45:59 your mercy for graceful operations on workers is 60 seconds
+2019-11-07 18:45:59 setting request body buffering size to 65536 bytes
+2019-11-07 18:45:59 mapped 334256 bytes (326 KB) for 1 cores
+2019-11-07 18:45:59 *** Operational MODE: single process ***
+2019-11-07 18:45:59 initialized 38 metrics
+2019-11-07 18:45:59 WSGI app 0 (mountpoint='') ready in 5 seconds on interpreter 0x1f421f0 pid: 1 (default app)
+2019-11-07 18:45:59 *** uWSGI is running in multiple interpreter mode ***
+2019-11-07 18:45:59 gracefully (RE)spawned uWSGI master process (pid: 1)
+2019-11-07 18:45:59 spawned uWSGI worker 1 (pid: 3, cores: 1)
+2019-11-07 18:45:59 metrics collector thread started
+2019-11-07 18:45:59 spawned 2 offload threads for uWSGI worker 1
+2019-11-07 18:45:59 announcing my loyalty to the Emperor...
+2019-11-07 18:46:00 Not Found: /favicon.ico
+2019-11-07 18:49:56 b'{"value":1000, "status":1}'
+2019-11-07 18:49:56 1
+2019-11-07 18:49:56 HELLO WORLD
+2019-11-07 18:49:56 326
+2019-11-07 18:50:17 b'{"value":1000, "status":1}'
+2019-11-07 18:50:17 1
+2019-11-07 18:50:17 HELLO WORLD
+2019-11-07 18:50:17 327
+2019-11-07 18:50:37 b'{"value":1000, "status":1}'
+2019-11-07 18:50:37 1
+2019-11-07 18:50:37 HELLO WORLD
+2019-11-07 18:50:37 328
+2019-11-07 18:50:58 b'{"value":1000, "status":1}'
+2019-11-07 18:50:58 1
+2019-11-07 18:50:58 HELLO WORLD
+2019-11-07 18:50:58 329
+2019-11-07 18:51:19 b'{"value":1000, "status":1}'
+2019-11-07 18:51:19 1
+2019-11-07 18:51:19 HELLO WORLD
+2019-11-07 18:51:19 330
+2019-11-07 18:51:40 b'{"value":1000, "status":1}'
+2019-11-07 18:51:40 1
+2019-11-07 18:51:40 HELLO WORLD
+2019-11-07 18:51:40 331
+2019-11-07 18:52:00 b'{"value":1000, "status":1}'
+2019-11-07 18:52:00 1
+2019-11-07 18:52:00 HELLO WORLD
+2019-11-07 18:52:01 332
+2019-11-07 18:52:21 b'{"value":1000, "status":1}'
+2019-11-07 18:52:21 1
+2019-11-07 18:52:21 HELLO WORLD
+2019-11-07 18:52:21 333
+2019-11-07 18:52:43 b'{"value":1000, "status":1}'
+2019-11-07 18:52:43 1
+2019-11-07 18:52:43 HELLO WORLD
+2019-11-07 18:52:43 334
+2019-11-07 18:53:04 b'{"value":1000, "status":1}'
+2019-11-07 18:53:04 1
+2019-11-07 18:53:04 HELLO WORLD
+2019-11-07 18:53:04 335
+2019-11-07 18:54:19 b'{"value":4000, "status":0}'
+2019-11-07 18:54:19 0
+2019-11-07 18:54:19 HELLO WORLD
+2019-11-07 18:54:19 336
+2019-11-07 18:54:40 b'{"value":4000, "status":0}'
+2019-11-07 18:54:40 0
+2019-11-07 18:54:40 HELLO WORLD
+2019-11-07 18:54:40 337
+2019-11-07 18:55:01 b'{"value":4000, "status":0}'
+2019-11-07 18:55:01 0
+2019-11-07 18:55:01 HELLO WORLD
+2019-11-07 18:55:01 338
+2019-11-07 18:55:22 b'{"value":4000, "status":0}'
+2019-11-07 18:55:22 0
+2019-11-07 18:55:22 HELLO WORLD
+2019-11-07 18:55:23 339
+2019-11-07 18:55:43 b'{"value":4000, "status":0}'
+2019-11-07 18:55:43 0
+2019-11-07 18:55:43 HELLO WORLD
+2019-11-07 18:55:43 340
+2019-11-07 18:56:07 b'{"value":4000, "status":0}'
+2019-11-07 18:56:07 0
+2019-11-07 18:56:07 HELLO WORLD
+2019-11-07 18:56:07 341
+2019-11-07 18:56:28 b'{"value":4000, "status":0}'
+2019-11-07 18:56:28 0
+2019-11-07 18:56:28 HELLO WORLD
+2019-11-07 18:56:28 342
+2019-11-07 18:56:49 b'{"value":4000, "status":0}'
+2019-11-07 18:56:49 0
+2019-11-07 18:56:49 HELLO WORLD
+2019-11-07 18:56:49 343
+2019-11-07 18:57:10 b'{"value":4000, "status":0}'
+2019-11-07 18:57:10 0
+2019-11-07 18:57:10 HELLO WORLD
+2019-11-07 18:57:10 344
+2019-11-07 18:57:30 b'{"value":4000, "status":0}'
+2019-11-07 18:57:30 0
+2019-11-07 18:57:30 HELLO WORLD
+2019-11-07 18:57:30 345
+2019-11-07 18:57:51 b'{"value":4000, "status":0}'
+2019-11-07 18:57:51 0
+2019-11-07 18:57:51 HELLO WORLD
+2019-11-07 18:57:51 346
+2019-11-07 18:58:12 b'{"value":4000, "status":0}'
+2019-11-07 18:58:12 0
+2019-11-07 18:58:12 HELLO WORLD
+2019-11-07 18:58:12 347
+2019-11-07 18:58:32 b'{"value":4000, "status":0}'
+2019-11-07 18:58:32 0
+2019-11-07 18:58:32 HELLO WORLD
+2019-11-07 18:58:32 348
+2019-11-07 18:58:53 b'{"value":4000, "status":0}'
+2019-11-07 18:58:53 0
+2019-11-07 18:58:53 HELLO WORLD
+2019-11-07 18:58:53 349
+2019-11-07 18:59:13 b'{"value":4000, "status":0}'
+2019-11-07 18:59:13 0
+2019-11-07 18:59:13 HELLO WORLD
+2019-11-07 18:59:13 350
+2019-11-07 18:59:34 b'{"value":4000, "status":0}'
+2019-11-07 18:59:34 0
+2019-11-07 18:59:34 HELLO WORLD
+2019-11-07 18:59:34 351
+2019-11-07 18:59:55 b'{"value":4000, "status":0}'
+2019-11-07 18:59:55 0
+2019-11-07 18:59:55 HELLO WORLD
+2019-11-07 18:59:55 352
+2019-11-07 19:00:16 b'{"value":4000, "status":0}'
+2019-11-07 19:00:16 0
+2019-11-07 19:00:16 HELLO WORLD
+2019-11-07 19:00:16 353
+2019-11-07 19:00:37 b'{"value":4000, "status":0}'
+2019-11-07 19:00:37 0
+2019-11-07 19:00:37 HELLO WORLD
+2019-11-07 19:00:37 354
+2019-11-07 19:00:57 b'{"value":4000, "status":0}'
+2019-11-07 19:00:57 0
+2019-11-07 19:00:57 HELLO WORLD
+2019-11-07 19:00:57 355
+2019-11-07 19:01:18 b'{"value":4000, "status":0}'
+2019-11-07 19:01:18 0
+2019-11-07 19:01:18 HELLO WORLD
+2019-11-07 19:01:18 356
+2019-11-07 19:01:38 b'{"value":4000, "status":0}'
+2019-11-07 19:01:38 0
+2019-11-07 19:01:38 HELLO WORLD
+2019-11-07 19:01:38 357
+2019-11-07 19:01:59 b'{"value":4000, "status":0}'
+2019-11-07 19:01:59 0
+2019-11-07 19:01:59 HELLO WORLD
+2019-11-07 19:01:59 358
+2019-11-07 19:02:20 b'{"value":4000, "status":0}'
+2019-11-07 19:02:20 0
+2019-11-07 19:02:20 HELLO WORLD
+2019-11-07 19:02:20 359
+2019-11-07 19:02:40 b'{"value":4000, "status":0}'
+2019-11-07 19:02:40 0
+2019-11-07 19:02:40 HELLO WORLD
+2019-11-07 19:02:40 360
+2019-11-07 19:03:01 b'{"value":4000, "status":0}'
+2019-11-07 19:03:01 0
+2019-11-07 19:03:01 HELLO WORLD
+2019-11-07 19:03:02 361
+2019-11-07 19:03:22 b'{"value":4000, "status":0}'
+2019-11-07 19:03:22 0
+2019-11-07 19:03:22 HELLO WORLD
+2019-11-07 19:03:23 362
+2019-11-07 19:03:43 b'{"value":4000, "status":0}'
+2019-11-07 19:03:43 0
+2019-11-07 19:03:43 HELLO WORLD
+2019-11-07 19:03:43 363
+2019-11-07 19:04:04 b'{"value":4000, "status":0}'
+2019-11-07 19:04:04 0
+2019-11-07 19:04:04 HELLO WORLD
+2019-11-07 19:04:04 364
+2019-11-07 19:04:21 <WSGIRequest: GET '/'>
+2019-11-07 19:04:21 364
+2019-11-07 19:04:21 0
+2019-11-07 19:04:25 b'{"value":4000, "status":0}'
+2019-11-07 19:04:25 0
+2019-11-07 19:04:25 HELLO WORLD
+2019-11-07 19:04:25 365
+2019-11-07 19:04:45 b'{"value":4000, "status":0}'
+2019-11-07 19:04:45 0
+2019-11-07 19:04:45 HELLO WORLD
+2019-11-07 19:04:45 366
+2019-11-07 19:05:06 b'{"value":4000, "status":0}'
+2019-11-07 19:05:06 0
+2019-11-07 19:05:06 HELLO WORLD
+2019-11-07 19:05:06 367
+2019-11-07 19:05:27 b'{"value":4000, "status":0}'
+2019-11-07 19:05:27 0
+2019-11-07 19:05:27 HELLO WORLD
+2019-11-07 19:05:27 368
+2019-11-07 19:05:41 <WSGIRequest: GET '/'>
+2019-11-07 19:05:41 368
+2019-11-07 19:05:41 0
+2019-11-07 19:05:47 b'{"value":4000, "status":0}'
+2019-11-07 19:05:47 0
+2019-11-07 19:05:47 HELLO WORLD
+2019-11-07 19:05:48 369
+2019-11-07 19:05:51 <WSGIRequest: GET '/'>
+2019-11-07 19:05:51 369
+2019-11-07 19:05:51 0
+2019-11-07 19:06:08 b'{"value":4000, "status":0}'
+2019-11-07 19:06:08 0
+2019-11-07 19:06:08 HELLO WORLD
+2019-11-07 19:06:08 370
+2019-11-07 19:06:28 b'{"value":4000, "status":0}'
+2019-11-07 19:06:28 0
+2019-11-07 19:06:28 HELLO WORLD
+2019-11-07 19:06:28 371
+2019-11-07 19:06:49 b'{"value":4000, "status":0}'
+2019-11-07 19:06:49 0
+2019-11-07 19:06:49 HELLO WORLD
+2019-11-07 19:06:49 372
+2019-11-07 19:07:09 b'{"value":4000, "status":0}'
+2019-11-07 19:07:09 0
+2019-11-07 19:07:09 HELLO WORLD
+2019-11-07 19:07:09 373
+2019-11-07 19:07:30 b'{"value":4000, "status":0}'
+2019-11-07 19:07:30 0
+2019-11-07 19:07:30 HELLO WORLD
+2019-11-07 19:07:30 374
+2019-11-07 19:07:51 b'{"value":4000, "status":0}'
+2019-11-07 19:07:51 0
+2019-11-07 19:07:51 HELLO WORLD
+2019-11-07 19:07:51 375
+2019-11-07 19:08:12 b'{"value":4000, "status":0}'
+2019-11-07 19:08:12 0
+2019-11-07 19:08:12 HELLO WORLD
+2019-11-07 19:08:12 376
+2019-11-07 19:08:33 b'{"value":4000, "status":0}'
+2019-11-07 19:08:33 0
+2019-11-07 19:08:33 HELLO WORLD
+2019-11-07 19:08:33 377
+2019-11-07 19:08:53 b'{"value":4000, "status":0}'
+2019-11-07 19:08:53 0
+2019-11-07 19:08:53 HELLO WORLD
+2019-11-07 19:08:53 378
+2019-11-07 19:09:14 b'{"value":4000, "status":0}'
+2019-11-07 19:09:14 0
+2019-11-07 19:09:14 HELLO WORLD
+2019-11-07 19:09:15 379
+2019-11-07 19:09:35 b'{"value":4000, "status":0}'
+2019-11-07 19:09:35 0
+2019-11-07 19:09:35 HELLO WORLD
+2019-11-07 19:09:36 380
+2019-11-07 19:09:57 b'{"value":4000, "status":0}'
+2019-11-07 19:09:57 0
+2019-11-07 19:09:57 HELLO WORLD
+2019-11-07 19:09:57 381
+2019-11-07 19:10:17 b'{"value":4000, "status":0}'
+2019-11-07 19:10:17 0
+2019-11-07 19:10:17 HELLO WORLD
+2019-11-07 19:10:17 382
+2019-11-07 19:10:39 b'{"value":4000, "status":0}'
+2019-11-07 19:10:39 0
+2019-11-07 19:10:39 HELLO WORLD
+2019-11-07 19:10:39 383
+2019-11-07 19:11:00 b'{"value":4000, "status":0}'
+2019-11-07 19:11:00 0
+2019-11-07 19:11:00 HELLO WORLD
+2019-11-07 19:11:00 384
+2019-11-07 19:11:20 b'{"value":4000, "status":0}'
+2019-11-07 19:11:20 0
+2019-11-07 19:11:20 HELLO WORLD
+2019-11-07 19:11:20 385
+2019-11-07 19:11:25 Thu Nov  7 19:11:25 2019 - received message 1 from emperor
+2019-11-07 19:11:25 ...gracefully killing workers...
+2019-11-07 19:11:25 Gracefully killing worker 1 (pid: 3)...
+2019-11-07 19:11:28 *** Starting uWSGI 2.0.17.1 (64bit) on [Thu Nov  7 19:11:26 2019] ***
+2019-11-07 19:11:28 compiled with version: 5.4.0 20160609 on 22 July 2019 12:42:05
+2019-11-07 19:11:28 os: Linux-4.4.0-1087-aws #98 SMP Mon Jul 22 11:53:46 UTC 2019
+2019-11-07 19:11:28 nodename: blue-liveweb8
+2019-11-07 19:11:28 machine: x86_64
+2019-11-07 19:11:28 clock source: unix
+2019-11-07 19:11:28 pcre jit disabled
+2019-11-07 19:11:28 detected number of CPU cores: 2
+2019-11-07 19:11:28 current working directory: (unreachable)/etc/uwsgi/vassals
+2019-11-07 19:11:28 detected binary path: /usr/local/bin/uwsgi
+2019-11-07 19:11:28 *** dumping internal routing table ***
+2019-11-07 19:11:28 [rule: 0] subject: path_info regexp: \.svgz$ action: addheader:Content-Encoding:gzip
+2019-11-07 19:11:28 *** end of the internal routing table ***
+2019-11-07 19:11:28 chdir() to /home/nishantsachdeva/DjangoServerEsw/server
+2019-11-07 19:11:28 limiting number of processes to 60...
+2019-11-07 19:11:28 your processes number limit is 60
+2019-11-07 19:11:28 your memory page size is 4096 bytes
+2019-11-07 19:11:28 detected max file descriptor number: 123456
+2019-11-07 19:11:28 building mime-types dictionary from file /etc/mime.types...
+2019-11-07 19:11:28 552 entry found
+2019-11-07 19:11:28 lock engine: pthread robust mutexes
+2019-11-07 19:11:28 thunder lock: disabled (you can enable it with --thunder-lock)
+2019-11-07 19:11:28 uwsgi socket 0 bound to UNIX address /var/sockets/nishantsachdeva.pythonanywhere.com/socket fd 3
+2019-11-07 19:11:28 Python version: 3.6.6 (default, Aug 22 2018, 20:46:46)  [GCC 5.4.0 20160609]
+2019-11-07 19:11:28 Set PythonHome to /home/nishantsachdeva/.virtualenvs/myvirtualenv
+2019-11-07 19:11:28 *** Python threads support is disabled. You can enable it with --enable-threads ***
+2019-11-07 19:11:28 Python main interpreter initialized at 0x18441f0
+2019-11-07 19:11:28 your server socket listen backlog is limited to 100 connections
+2019-11-07 19:11:28 your mercy for graceful operations on workers is 60 seconds
+2019-11-07 19:11:28 setting request body buffering size to 65536 bytes
+2019-11-07 19:11:28 mapped 334256 bytes (326 KB) for 1 cores
+2019-11-07 19:11:28 *** Operational MODE: single process ***
+2019-11-07 19:11:28 initialized 38 metrics
+2019-11-07 19:11:28 WSGI app 0 (mountpoint='') ready in 2 seconds on interpreter 0x18441f0 pid: 1 (default app)
+2019-11-07 19:11:28 *** uWSGI is running in multiple interpreter mode ***
+2019-11-07 19:11:28 gracefully (RE)spawned uWSGI master process (pid: 1)
+2019-11-07 19:11:28 spawned uWSGI worker 1 (pid: 3, cores: 1)
+2019-11-07 19:11:28 metrics collector thread started
+2019-11-07 19:11:28 spawned 2 offload threads for uWSGI worker 1
+2019-11-07 19:11:29 <WSGIRequest: GET '/'>
+2019-11-07 19:11:29 1
+2019-11-07 19:11:29 0
+2019-11-07 19:11:29 announcing my loyalty to the Emperor...
+2019-11-07 19:11:41 b'{"value":4000, "status":0}'
+2019-11-07 19:11:41 0
+2019-11-07 19:11:41 HELLO WORLD
+2019-11-07 19:11:41 386
+2019-11-07 19:12:02 b'{"value":4000, "status":0}'
+2019-11-07 19:12:02 0
+2019-11-07 19:12:02 HELLO WORLD
+2019-11-07 19:12:03 387
+2019-11-07 19:12:23 b'{"value":4000, "status":0}'
+2019-11-07 19:12:23 0
+2019-11-07 19:12:23 HELLO WORLD
+2019-11-07 19:12:23 388
+2019-11-07 19:12:39 Thu Nov  7 19:12:39 2019 - received message 1 from emperor
+2019-11-07 19:12:39 ...gracefully killing workers...
+2019-11-07 19:12:39 Gracefully killing worker 1 (pid: 3)...
+2019-11-07 19:12:41 *** Starting uWSGI 2.0.17.1 (64bit) on [Thu Nov  7 19:12:40 2019] ***
+2019-11-07 19:12:41 compiled with version: 5.4.0 20160609 on 22 July 2019 12:42:05
+2019-11-07 19:12:41 os: Linux-4.4.0-1087-aws #98 SMP Mon Jul 22 11:53:46 UTC 2019
+2019-11-07 19:12:41 nodename: blue-liveweb8
+2019-11-07 19:12:41 machine: x86_64
+2019-11-07 19:12:41 clock source: unix
+2019-11-07 19:12:41 pcre jit disabled
+2019-11-07 19:12:41 detected number of CPU cores: 2
+2019-11-07 19:12:41 current working directory: (unreachable)/etc/uwsgi/vassals
+2019-11-07 19:12:41 detected binary path: /usr/local/bin/uwsgi
+2019-11-07 19:12:41 *** dumping internal routing table ***
+2019-11-07 19:12:41 [rule: 0] subject: path_info regexp: \.svgz$ action: addheader:Content-Encoding:gzip
+2019-11-07 19:12:41 *** end of the internal routing table ***
+2019-11-07 19:12:41 chdir() to /home/nishantsachdeva/DjangoServerEsw/server
+2019-11-07 19:12:41 limiting number of processes to 60...
+2019-11-07 19:12:41 your processes number limit is 60
+2019-11-07 19:12:41 your memory page size is 4096 bytes
+2019-11-07 19:12:41 detected max file descriptor number: 123456
+2019-11-07 19:12:41 building mime-types dictionary from file /etc/mime.types...
+2019-11-07 19:12:41 552 entry found
+2019-11-07 19:12:41 lock engine: pthread robust mutexes
+2019-11-07 19:12:41 thunder lock: disabled (you can enable it with --thunder-lock)
+2019-11-07 19:12:41 uwsgi socket 0 bound to UNIX address /var/sockets/nishantsachdeva.pythonanywhere.com/socket fd 3
+2019-11-07 19:12:41 Python version: 3.6.6 (default, Aug 22 2018, 20:46:46)  [GCC 5.4.0 20160609]
+2019-11-07 19:12:41 Set PythonHome to /home/nishantsachdeva/.virtualenvs/myvirtualenv
+2019-11-07 19:12:41 *** Python threads support is disabled. You can enable it with --enable-threads ***
+2019-11-07 19:12:41 Python main interpreter initialized at 0x12e31f0
+2019-11-07 19:12:41 your server socket listen backlog is limited to 100 connections
+2019-11-07 19:12:41 your mercy for graceful operations on workers is 60 seconds
+2019-11-07 19:12:41 setting request body buffering size to 65536 bytes
+2019-11-07 19:12:41 mapped 334256 bytes (326 KB) for 1 cores
+2019-11-07 19:12:41 *** Operational MODE: single process ***
+2019-11-07 19:12:41 initialized 38 metrics
+2019-11-07 19:12:41 WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x12e31f0 pid: 1 (default app)
+2019-11-07 19:12:41 *** uWSGI is running in multiple interpreter mode ***
+2019-11-07 19:12:41 gracefully (RE)spawned uWSGI master process (pid: 1)
+2019-11-07 19:12:41 spawned uWSGI worker 1 (pid: 3, cores: 1)
+2019-11-07 19:12:41 metrics collector thread started
+2019-11-07 19:12:41 spawned 2 offload threads for uWSGI worker 1
+2019-11-07 19:12:43 <WSGIRequest: GET '/'>
+2019-11-07 19:12:43 1
+2019-11-07 19:12:43 0
+2019-11-07 19:12:43 announcing my loyalty to the Emperor...
+2019-11-07 19:12:47 <WSGIRequest: GET '/'>
+2019-11-07 19:12:47 1
+2019-11-07 19:12:47 0
+2019-11-07 19:12:49 <WSGIRequest: GET '/'>
+2019-11-07 19:12:49 1
+2019-11-07 19:12:49 0
+2019-11-07 19:12:50 <WSGIRequest: GET '/'>
+2019-11-07 19:12:50 1
+2019-11-07 19:12:50 0
+2019-11-07 19:12:51 <WSGIRequest: GET '/'>
+2019-11-07 19:12:51 1
+2019-11-07 19:12:51 0
+2019-11-07 19:13:24 b'{"value":4533 , "status":0}'
+2019-11-07 19:13:24 0
+2019-11-07 19:13:24 HELLO WORLD
+2019-11-07 19:13:24 389
+2019-11-07 19:13:27 <WSGIRequest: GET '/'>
+2019-11-07 19:13:27 389
+2019-11-07 19:13:27 0
+2019-11-07 19:14:02 <WSGIRequest: GET '/'>
+2019-11-07 19:14:02 389
+2019-11-07 19:14:02 0
+2019-11-07 19:14:08 b'{"value":4533 , "status":0}'
+2019-11-07 19:14:08 0
+2019-11-07 19:14:08 HELLO WORLD
+2019-11-07 19:14:08 390
+2019-11-07 19:14:11 <WSGIRequest: GET '/'>
+2019-11-07 19:14:11 390
+2019-11-07 19:14:11 0
+2019-11-07 19:15:09 b'{"value":4533 , "status":0}'
+2019-11-07 19:15:09 0
+2019-11-07 19:15:09 HELLO WORLD
+2019-11-07 19:15:09 391
+2019-11-07 19:15:11 <WSGIRequest: GET '/'>
+2019-11-07 19:15:11 391
+2019-11-07 19:15:11 0
+2019-11-07 19:15:14 <WSGIRequest: GET '/'>
+2019-11-07 19:15:14 391
+2019-11-07 19:15:14 0
+2019-11-07 19:15:15 <WSGIRequest: GET '/'>
+2019-11-07 19:15:15 391
+2019-11-07 19:15:15 0
+2019-11-07 19:15:16 <WSGIRequest: GET '/'>
+2019-11-07 19:15:16 391
+2019-11-07 19:15:16 0
+2019-11-07 19:15:17 <WSGIRequest: GET '/'>
+2019-11-07 19:15:17 391
+2019-11-07 19:15:17 0
+2019-11-07 19:16:36 Thu Nov  7 19:16:36 2019 - received message 1 from emperor
+2019-11-07 19:16:36 ...gracefully killing workers...
+2019-11-07 19:16:36 Gracefully killing worker 1 (pid: 3)...
+2019-11-07 19:16:38 *** Starting uWSGI 2.0.17.1 (64bit) on [Thu Nov  7 19:16:37 2019] ***
+2019-11-07 19:16:38 compiled with version: 5.4.0 20160609 on 22 July 2019 12:42:05
+2019-11-07 19:16:38 os: Linux-4.4.0-1087-aws #98 SMP Mon Jul 22 11:53:46 UTC 2019
+2019-11-07 19:16:38 nodename: blue-liveweb8
+2019-11-07 19:16:38 machine: x86_64
+2019-11-07 19:16:38 clock source: unix
+2019-11-07 19:16:38 pcre jit disabled
+2019-11-07 19:16:38 detected number of CPU cores: 2
+2019-11-07 19:16:38 current working directory: (unreachable)/etc/uwsgi/vassals
+2019-11-07 19:16:38 detected binary path: /usr/local/bin/uwsgi
+2019-11-07 19:16:38 *** dumping internal routing table ***
+2019-11-07 19:16:38 [rule: 0] subject: path_info regexp: \.svgz$ action: addheader:Content-Encoding:gzip
+2019-11-07 19:16:38 *** end of the internal routing table ***
+2019-11-07 19:16:38 chdir() to /home/nishantsachdeva/DjangoServerEsw/server
+2019-11-07 19:16:38 limiting number of processes to 60...
+2019-11-07 19:16:38 your processes number limit is 60
+2019-11-07 19:16:38 your memory page size is 4096 bytes
+2019-11-07 19:16:38 detected max file descriptor number: 123456
+2019-11-07 19:16:38 building mime-types dictionary from file /etc/mime.types...
+2019-11-07 19:16:38 552 entry found
+2019-11-07 19:16:38 lock engine: pthread robust mutexes
+2019-11-07 19:16:38 thunder lock: disabled (you can enable it with --thunder-lock)
+2019-11-07 19:16:38 uwsgi socket 0 bound to UNIX address /var/sockets/nishantsachdeva.pythonanywhere.com/socket fd 3
+2019-11-07 19:16:38 Python version: 3.6.6 (default, Aug 22 2018, 20:46:46)  [GCC 5.4.0 20160609]
+2019-11-07 19:16:38 Set PythonHome to /home/nishantsachdeva/.virtualenvs/myvirtualenv
+2019-11-07 19:16:38 *** Python threads support is disabled. You can enable it with --enable-threads ***
+2019-11-07 19:16:38 Python main interpreter initialized at 0x1f2b1f0
+2019-11-07 19:16:38 your server socket listen backlog is limited to 100 connections
+2019-11-07 19:16:38 your mercy for graceful operations on workers is 60 seconds
+2019-11-07 19:16:38 setting request body buffering size to 65536 bytes
+2019-11-07 19:16:38 mapped 334256 bytes (326 KB) for 1 cores
+2019-11-07 19:16:38 *** Operational MODE: single process ***
+2019-11-07 19:16:38 initialized 38 metrics
+2019-11-07 19:16:38 WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x1f2b1f0 pid: 1 (default app)
+2019-11-07 19:16:38 *** uWSGI is running in multiple interpreter mode ***
+2019-11-07 19:16:38 gracefully (RE)spawned uWSGI master process (pid: 1)
+2019-11-07 19:16:38 spawned uWSGI worker 1 (pid: 3, cores: 1)
+2019-11-07 19:16:38 metrics collector thread started
+2019-11-07 19:16:38 spawned 2 offload threads for uWSGI worker 1
+2019-11-07 19:16:40 <WSGIRequest: GET '/'>
+2019-11-07 19:16:40 1
+2019-11-07 19:16:40 0
+2019-11-07 19:16:40 announcing my loyalty to the Emperor...
+2019-11-07 19:16:43 <WSGIRequest: GET '/'>
+2019-11-07 19:16:43 1
+2019-11-07 19:16:43 0
+2019-11-07 19:16:45 <WSGIRequest: GET '/'>
+2019-11-07 19:16:45 1
+2019-11-07 19:16:45 0
+2019-11-07 19:16:47 b'{"value":4533 , "status":0}'
+2019-11-07 19:16:47 0
+2019-11-07 19:16:47 HELLO WORLD
+2019-11-07 19:16:47 392
+2019-11-07 19:16:49 <WSGIRequest: GET '/'>
+2019-11-07 19:16:49 392
+2019-11-07 19:16:49 0
+2019-11-07 19:16:53 b'{"value":4533 , "status":0}'
+2019-11-07 19:16:53 0
+2019-11-07 19:16:53 HELLO WORLD
+2019-11-07 19:16:53 393
+2019-11-07 19:16:55 <WSGIRequest: GET '/'>
+2019-11-07 19:16:55 393
+2019-11-07 19:16:55 0
+2019-11-07 19:17:38 <WSGIRequest: GET '/'>
+2019-11-07 19:17:38 393
+2019-11-07 19:17:38 0
+2019-11-07 19:17:43 b'{"value":4533 , "status":0}'
+2019-11-07 19:17:43 0
+2019-11-07 19:17:43 HELLO WORLD
+2019-11-07 19:17:43 394
+2019-11-07 19:17:45 <WSGIRequest: GET '/'>
+2019-11-07 19:17:45 394
+2019-11-07 19:17:45 0
+2019-11-07 19:17:52 b'{"value":4533 , "status":0}'
+2019-11-07 19:17:52 0
+2019-11-07 19:17:52 HELLO WORLD
+2019-11-07 19:17:52 395
+2019-11-07 19:17:54 <WSGIRequest: GET '/'>
+2019-11-07 19:17:54 395
+2019-11-07 19:17:54 0
+2019-11-07 19:18:03 b'{"value":4533 , "status":0}'
+2019-11-07 19:18:03 0
+2019-11-07 19:18:03 HELLO WORLD
+2019-11-07 19:18:03 396
+2019-11-07 19:18:05 <WSGIRequest: GET '/'>
+2019-11-07 19:18:05 396
+2019-11-07 19:18:05 0
+2019-11-07 19:21:40 <WSGIRequest: GET '/'>
+2019-11-07 19:21:40 396
+2019-11-07 19:21:40 0
+2019-11-07 19:21:41 Not Found: /favicon.ico
+2019-11-07 19:21:41 Thu Nov  7 19:21:41 2019 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /favicon.ico (ip 10.0.0.14) !!!
+2019-11-07 19:21:41 Thu Nov  7 19:21:41 2019 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET /favicon.ico (10.0.0.14)
+2019-11-07 19:40:56 <WSGIRequest: GET '/'>
+2019-11-07 19:40:56 396
+2019-11-07 19:40:56 0
+2019-11-07 19:42:00 <WSGIRequest: GET '/'>
+2019-11-07 19:42:00 396
+2019-11-07 19:42:00 0
+2019-11-07 19:42:01 Not Found: /favicon.ico
+2019-11-07 19:42:11 <WSGIRequest: GET '/'>
+2019-11-07 19:42:11 396
+2019-11-07 19:42:11 0
+2019-11-07 19:42:20 Not Found: /favicon.ico
+2019-11-07 20:18:54 b'{"value":307, "status":1}'
+2019-11-07 20:18:54 1
+2019-11-07 20:18:54 HELLO WORLD
+2019-11-07 20:18:54 397
+2019-11-07 20:22:15 <WSGIRequest: GET '/'>
+2019-11-07 20:22:15 397
+2019-11-07 20:22:15 0
+2019-11-07 20:22:16 Not Found: /favicon.ico
+2019-11-07 20:24:05 <WSGIRequest: GET '/'>
+2019-11-07 20:24:05 397
+2019-11-07 20:24:05 0
+2019-11-07 20:24:06 Not Found: /favicon.ico
+2019-11-07 20:29:15 <WSGIRequest: GET '/'>
+2019-11-07 20:29:15 397
+2019-11-07 20:29:15 0
+2019-11-07 20:29:15 b'{"value":213, "status":1}'
+2019-11-07 20:29:15 1
+2019-11-07 20:29:15 HELLO WORLD
+2019-11-07 20:29:15 398
+2019-11-07 20:29:16 Not Found: /favicon.ico
+2019-11-07 20:29:33 <WSGIRequest: GET '/'>
+2019-11-07 20:29:33 398
+2019-11-07 20:29:33 0
+2019-11-07 20:31:21 <WSGIRequest: GET '/'>
+2019-11-07 20:31:21 398
+2019-11-07 20:31:21 0
+2019-11-07 20:31:27 <WSGIRequest: GET '/'>
+2019-11-07 20:31:27 398
+2019-11-07 20:31:27 0
+2019-11-07 20:33:43 <WSGIRequest: GET '/'>
+2019-11-07 20:33:43 398
+2019-11-07 20:33:43 0
+2019-11-07 20:33:43 Not Found: /favicon.ico
+2019-11-07 20:33:58 <WSGIRequest: GET '/'>
+2019-11-07 20:33:58 398
+2019-11-07 20:33:58 0
+2019-11-07 20:33:59 Not Found: /favicon.ico
+2019-11-07 20:34:03 <WSGIRequest: GET '/'>
+2019-11-07 20:34:03 398
+2019-11-07 20:34:03 0
+2019-11-07 20:37:05 Not Found: /favicon.ico
+2019-11-07 20:37:06 <WSGIRequest: GET '/'>
+2019-11-07 20:37:06 398
+2019-11-07 20:37:06 0
+2019-11-07 20:37:10 <WSGIRequest: GET '/'>
+2019-11-07 20:37:10 398
+2019-11-07 20:37:10 0
+2019-11-07 20:37:13 <WSGIRequest: GET '/'>
+2019-11-07 20:37:13 398
+2019-11-07 20:37:13 0
+2019-11-07 20:37:25 <WSGIRequest: GET '/'>
+2019-11-07 20:37:25 398
+2019-11-07 20:37:25 0
+2019-11-07 20:37:27 <WSGIRequest: GET '/'>
+2019-11-07 20:37:27 398
+2019-11-07 20:37:27 0
+2019-11-07 20:37:29 <WSGIRequest: GET '/'>
+2019-11-07 20:37:29 398
+2019-11-07 20:37:29 0
+2019-11-07 20:37:34 <WSGIRequest: GET '/'>
+2019-11-07 20:37:34 398
+2019-11-07 20:37:34 0
+2019-11-07 20:37:40 <WSGIRequest: GET '/'>
+2019-11-07 20:37:40 398
+2019-11-07 20:37:40 0
+2019-11-07 20:37:48 <WSGIRequest: GET '/'>
+2019-11-07 20:37:48 398
+2019-11-07 20:37:48 0
+2019-11-07 20:39:36 b'{"value":98, "status":1}'
+2019-11-07 20:39:36 1
+2019-11-07 20:39:36 HELLO WORLD
+2019-11-07 20:39:36 399
+2019-11-07 20:40:59 <WSGIRequest: GET '/'>
+2019-11-07 20:40:59 399
+2019-11-07 20:40:59 0
+2019-11-07 20:40:59 Not Found: /favicon.ico
+2019-11-07 20:42:28 <WSGIRequest: GET '/'>
+2019-11-07 20:42:28 399
+2019-11-07 20:42:28 0
+2019-11-07 20:47:41 <WSGIRequest: GET '/'>
+2019-11-07 20:47:41 399
+2019-11-07 20:47:41 0
+2019-11-07 20:47:52 <WSGIRequest: GET '/'>
+2019-11-07 20:47:52 399
+2019-11-07 20:47:52 0
+2019-11-07 20:47:55 <WSGIRequest: GET '/'>
+2019-11-07 20:47:55 399
+2019-11-07 20:47:55 0
+2019-11-07 20:49:58 b'{"value":92, "status":1}'
+2019-11-07 20:49:58 1
+2019-11-07 20:49:58 HELLO WORLD
+2019-11-07 20:49:58 400
+2019-11-07 21:00:18 b'{"value":100, "status":1}'
+2019-11-07 21:00:18 1
+2019-11-07 21:00:18 HELLO WORLD
+2019-11-07 21:00:18 401
+2019-11-07 21:10:39 b'{"value":94, "status":1}'
+2019-11-07 21:10:39 1
+2019-11-07 21:10:39 HELLO WORLD
+2019-11-07 21:10:39 402
+2019-11-07 21:17:55 <WSGIRequest: GET '/'>
+2019-11-07 21:17:55 402
+2019-11-07 21:17:55 0
+2019-11-07 21:21:00 b'{"value":108, "status":1}'
+2019-11-07 21:21:00 1
+2019-11-07 21:21:00 HELLO WORLD
+2019-11-07 21:21:00 403
+2019-11-07 21:27:28 <WSGIRequest: GET '/'>
+2019-11-07 21:27:28 403
+2019-11-07 21:27:28 0
+2019-11-07 21:29:34 <WSGIRequest: GET '/'>
+2019-11-07 21:29:34 403
+2019-11-07 21:29:34 0
+2019-11-07 21:31:20 b'{"value":94, "status":1}'
+2019-11-07 21:31:20 1
+2019-11-07 21:31:20 HELLO WORLD
+2019-11-07 21:31:21 404
+2019-11-07 21:41:41 b'{"value":99, "status":1}'
+2019-11-07 21:41:41 1
+2019-11-07 21:41:41 HELLO WORLD
+2019-11-07 21:41:41 405
+2019-11-07 21:52:02 b'{"value":86, "status":1}'
+2019-11-07 21:52:02 1
+2019-11-07 21:52:02 HELLO WORLD
+2019-11-07 21:52:02 406
+2019-11-07 22:02:23 b'{"value":96, "status":1}'
+2019-11-07 22:02:23 1
+2019-11-07 22:02:23 HELLO WORLD
+2019-11-07 22:02:23 407
+2019-11-07 22:12:43 b'{"value":79, "status":1}'
+2019-11-07 22:12:43 1
+2019-11-07 22:12:43 HELLO WORLD
+2019-11-07 22:12:43 408
+2019-11-07 22:23:04 b'{"value":0, "status":1}'
+2019-11-07 22:23:04 1
+2019-11-07 22:23:04 HELLO WORLD
+2019-11-07 22:23:04 409
+2019-11-07 22:33:25 b'{"value":0, "status":1}'
+2019-11-07 22:33:25 1
+2019-11-07 22:33:25 HELLO WORLD
+2019-11-07 22:33:25 410
+2019-11-07 22:43:46 b'{"value":0, "status":1}'
+2019-11-07 22:43:46 1
+2019-11-07 22:43:46 HELLO WORLD
+2019-11-07 22:43:46 411
+2019-11-07 22:54:06 b'{"value":0, "status":1}'
+2019-11-07 22:54:06 1
+2019-11-07 22:54:06 HELLO WORLD
+2019-11-07 22:54:06 412
+2019-11-07 23:04:27 b'{"value":0, "status":1}'
+2019-11-07 23:04:27 1
+2019-11-07 23:04:27 HELLO WORLD
+2019-11-07 23:04:27 413
+2019-11-07 23:14:48 b'{"value":0, "status":1}'
+2019-11-07 23:14:48 1
+2019-11-07 23:14:48 HELLO WORLD
+2019-11-07 23:14:48 414
+2019-11-07 23:25:08 b'{"value":0, "status":1}'
+2019-11-07 23:25:08 1
+2019-11-07 23:25:08 HELLO WORLD
+2019-11-07 23:25:08 415
+2019-11-07 23:35:29 b'{"value":0, "status":1}'
+2019-11-07 23:35:29 1
+2019-11-07 23:35:29 HELLO WORLD
+2019-11-07 23:35:29 416
+2019-11-07 23:45:50 b'{"value":0, "status":1}'
+2019-11-07 23:45:50 1
+2019-11-07 23:45:50 HELLO WORLD
+2019-11-07 23:45:50 417
+2019-11-07 23:56:10 b'{"value":0, "status":1}'
+2019-11-07 23:56:10 1
+2019-11-07 23:56:10 HELLO WORLD
+2019-11-07 23:56:10 418
+2019-11-08 00:06:32 b'{"value":0, "status":1}'
+2019-11-08 00:06:32 1
+2019-11-08 00:06:32 HELLO WORLD
+2019-11-08 00:06:32 419
+2019-11-08 00:16:52 b'{"value":0, "status":1}'
+2019-11-08 00:16:52 1
+2019-11-08 00:16:52 HELLO WORLD
+2019-11-08 00:16:53 420
+2019-11-08 00:27:13 b'{"value":0, "status":1}'
+2019-11-08 00:27:13 1
+2019-11-08 00:27:13 HELLO WORLD
+2019-11-08 00:27:13 421
+2019-11-08 00:37:34 b'{"value":311, "status":1}'
+2019-11-08 00:37:34 1
+2019-11-08 00:37:34 HELLO WORLD
+2019-11-08 00:37:34 422
+2019-11-08 00:47:55 b'{"value":2109, "status":0}'
+2019-11-08 00:47:55 0
+2019-11-08 00:47:55 HELLO WORLD
+2019-11-08 00:47:55 423
+2019-11-08 00:58:15 b'{"value":4094, "status":0}'
+2019-11-08 00:58:15 0
+2019-11-08 00:58:15 HELLO WORLD
+2019-11-08 00:58:15 424
+2019-11-08 01:08:36 b'{"value":4094, "status":0}'
+2019-11-08 01:08:36 0
+2019-11-08 01:08:36 HELLO WORLD
+2019-11-08 01:08:36 425
+2019-11-08 01:18:57 b'{"value":4094, "status":0}'
+2019-11-08 01:18:57 0
+2019-11-08 01:18:57 HELLO WORLD
+2019-11-08 01:18:57 426
+2019-11-08 01:29:18 b'{"value":4094, "status":0}'
+2019-11-08 01:29:18 0
+2019-11-08 01:29:18 HELLO WORLD
+2019-11-08 01:29:18 427
+2019-11-08 01:39:38 b'{"value":4094, "status":0}'
+2019-11-08 01:39:38 0
+2019-11-08 01:39:38 HELLO WORLD
+2019-11-08 01:39:38 428
+2019-11-08 01:49:59 b'{"value":4094, "status":0}'
+2019-11-08 01:49:59 0
+2019-11-08 01:49:59 HELLO WORLD
+2019-11-08 01:49:59 429
+2019-11-08 02:00:19 b'{"value":4094, "status":0}'
+2019-11-08 02:00:19 0
+2019-11-08 02:00:19 HELLO WORLD
+2019-11-08 02:00:19 430
+2019-11-08 02:06:14 <WSGIRequest: GET '/'>
+2019-11-08 02:06:14 430
+2019-11-08 02:06:14 0
+2019-11-08 02:10:40 b'{"value":4094, "status":0}'
+2019-11-08 02:10:40 0
+2019-11-08 02:10:40 HELLO WORLD
+2019-11-08 02:10:40 431
+2019-11-08 02:21:00 b'{"value":4094, "status":0}'
+2019-11-08 02:21:00 0
+2019-11-08 02:21:00 HELLO WORLD
+2019-11-08 02:21:00 432
+2019-11-08 02:31:21 b'{"value":4094, "status":0}'
+2019-11-08 02:31:21 0
+2019-11-08 02:31:21 HELLO WORLD
+2019-11-08 02:31:21 433
+2019-11-08 02:41:42 b'{"value":4094, "status":0}'
+2019-11-08 02:41:42 0
+2019-11-08 02:41:42 HELLO WORLD
+2019-11-08 02:41:42 434
+2019-11-08 02:52:03 b'{"value":4094, "status":0}'
+2019-11-08 02:52:03 0
+2019-11-08 02:52:03 HELLO WORLD
+2019-11-08 02:52:03 435
+2019-11-08 02:52:14 <WSGIRequest: GET '/'>
+2019-11-08 02:52:14 435
+2019-11-08 02:52:14 0
+2019-11-08 02:52:29 <WSGIRequest: GET '/'>
+2019-11-08 02:52:29 435
+2019-11-08 02:52:29 0
+2019-11-08 02:52:33 <WSGIRequest: GET '/'>
+2019-11-08 02:52:33 435
+2019-11-08 02:52:33 0
+2019-11-08 03:02:23 b'{"value":4094, "status":0}'
+2019-11-08 03:02:23 0
+2019-11-08 03:02:23 HELLO WORLD
+2019-11-08 03:02:23 436
+2019-11-08 03:04:25 <WSGIRequest: GET '/'>
+2019-11-08 03:04:25 436
+2019-11-08 03:04:25 0
+2019-11-08 03:12:44 b'{"value":4094, "status":0}'
+2019-11-08 03:12:44 0
+2019-11-08 03:12:44 HELLO WORLD
+2019-11-08 03:12:44 437
+2019-11-08 03:23:05 b'{"value":4094, "status":0}'
+2019-11-08 03:23:05 0
+2019-11-08 03:23:05 HELLO WORLD
+2019-11-08 03:23:05 438
+2019-11-08 03:33:26 b'{"value":4094, "status":0}'
+2019-11-08 03:33:26 0
+2019-11-08 03:33:26 HELLO WORLD
+2019-11-08 03:33:26 439
+2019-11-08 03:43:46 b'{"value":4094, "status":0}'
+2019-11-08 03:43:46 0
+2019-11-08 03:43:46 HELLO WORLD
+2019-11-08 03:43:46 440
+2019-11-08 03:54:07 b'{"value":4094, "status":0}'
+2019-11-08 03:54:07 0
+2019-11-08 03:54:07 HELLO WORLD
+2019-11-08 03:54:07 441
+2019-11-08 04:04:27 b'{"value":4094, "status":0}'
+2019-11-08 04:04:27 0
+2019-11-08 04:04:27 HELLO WORLD
+2019-11-08 04:04:27 442
+2019-11-08 04:14:48 b'{"value":4094, "status":0}'
+2019-11-08 04:14:48 0
+2019-11-08 04:14:48 HELLO WORLD
+2019-11-08 04:14:48 443
+2019-11-08 04:25:09 b'{"value":4094, "status":0}'
+2019-11-08 04:25:09 0
+2019-11-08 04:25:09 HELLO WORLD
+2019-11-08 04:25:09 444
+2019-11-08 04:30:45 <WSGIRequest: GET '/'>
+2019-11-08 04:30:45 444
+2019-11-08 04:30:45 0
+2019-11-08 04:30:46 Not Found: /favicon.ico
+2019-11-08 04:35:29 b'{"value":4094, "status":0}'
+2019-11-08 04:35:29 0
+2019-11-08 04:35:29 HELLO WORLD
+2019-11-08 04:35:29 445
+2019-11-08 04:45:50 b'{"value":4094, "status":0}'
+2019-11-08 04:45:50 0
+2019-11-08 04:45:50 HELLO WORLD
+2019-11-08 04:45:50 446
+2019-11-08 04:56:11 b'{"value":4094, "status":0}'
+2019-11-08 04:56:11 0
+2019-11-08 04:56:11 HELLO WORLD
+2019-11-08 04:56:11 447
+2019-11-08 05:40:30 Not Found: /favicon.ico
+2019-11-08 05:40:41 <WSGIRequest: GET '/'>
+2019-11-08 05:40:41 447
+2019-11-08 05:40:41 0
+2019-11-08 05:46:44 <WSGIRequest: GET '/'>
+2019-11-08 05:46:44 447
+2019-11-08 05:46:44 0
+2019-11-08 05:46:45 Not Found: /favicon.ico
+2019-11-08 05:50:24 <WSGIRequest: GET '/'>
+2019-11-08 05:50:24 447
+2019-11-08 05:50:24 0
+2019-11-08 05:50:25 Not Found: /favicon.ico
+2019-11-08 06:43:42 b'{"value":4094, "status":0}'
+2019-11-08 06:43:42 0
+2019-11-08 06:43:42 HELLO WORLD
+2019-11-08 06:43:43 448
+2019-11-08 07:05:53 <WSGIRequest: GET '/'>
+2019-11-08 07:05:53 448
+2019-11-08 07:05:53 0
+2019-11-08 07:05:54 Not Found: /favicon.ico
+2019-11-08 07:05:56 <WSGIRequest: GET '/'>
+2019-11-08 07:05:56 448
+2019-11-08 07:05:56 0
+2019-11-08 07:06:47 <WSGIRequest: GET '/'>
+2019-11-08 07:06:47 448
+2019-11-08 07:06:47 0
+2019-11-08 07:07:24 <WSGIRequest: GET '/'>
+2019-11-08 07:07:24 448
+2019-11-08 07:07:24 0
+2019-11-08 07:07:30 <WSGIRequest: GET '/'>
+2019-11-08 07:07:30 448
+2019-11-08 07:07:30 0
+2019-11-08 07:07:39 <WSGIRequest: GET '/'>
+2019-11-08 07:07:39 448
+2019-11-08 07:07:39 0
+2019-11-08 07:07:45 <WSGIRequest: GET '/'>
+2019-11-08 07:07:45 448
+2019-11-08 07:07:45 0
+2019-11-08 07:07:55 <WSGIRequest: GET '/'>
+2019-11-08 07:07:55 448
+2019-11-08 07:07:55 0
+2019-11-08 07:08:02 <WSGIRequest: GET '/'>
+2019-11-08 07:08:02 448
+2019-11-08 07:08:02 0
+2019-11-08 07:10:42 b'{"value":4094, "status":0}'
+2019-11-08 07:10:42 0
+2019-11-08 07:10:42 HELLO WORLD
+2019-11-08 07:10:42 449
+2019-11-08 07:18:20 <WSGIRequest: GET '/'>
+2019-11-08 07:18:20 449
+2019-11-08 07:18:20 0
+2019-11-08 07:18:21 Not Found: /favicon.ico
+2019-11-08 07:21:03 b'{"value":4094, "status":0}'
+2019-11-08 07:21:03 0
+2019-11-08 07:21:03 HELLO WORLD
+2019-11-08 07:21:03 450
+2019-11-08 07:31:23 b'{"value":4094, "status":0}'
+2019-11-08 07:31:23 0
+2019-11-08 07:31:23 HELLO WORLD
+2019-11-08 07:31:23 451
+2019-11-08 07:35:00 <WSGIRequest: GET '/'>
+2019-11-08 07:35:00 451
+2019-11-08 07:35:00 0
+2019-11-08 07:35:00 Not Found: /favicon.ico
+2019-11-08 07:35:00 Not Found: /favicon.ico
+2019-11-08 07:41:43 <WSGIRequest: GET '/'>
+2019-11-08 07:41:43 451
+2019-11-08 07:41:43 0
+2019-11-08 07:41:44 b'{"value":4094, "status":0}'
+2019-11-08 07:41:44 0
+2019-11-08 07:41:44 HELLO WORLD
+2019-11-08 07:41:44 452
+2019-11-08 07:45:50 <WSGIRequest: GET '/'>
+2019-11-08 07:45:50 452
+2019-11-08 07:45:50 0
+2019-11-08 07:52:04 b'{"value":4094, "status":0}'
+2019-11-08 07:52:04 0
+2019-11-08 07:52:04 HELLO WORLD
+2019-11-08 07:52:04 453
+2019-11-08 08:02:24 b'{"value":4094, "status":0}'
+2019-11-08 08:02:24 0
+2019-11-08 08:02:24 HELLO WORLD
+2019-11-08 08:02:25 454
+2019-11-08 08:05:16 <WSGIRequest: GET '/'>
+2019-11-08 08:05:16 454
+2019-11-08 08:05:16 0
+2019-11-08 08:12:45 b'{"value":4094, "status":0}'
+2019-11-08 08:12:45 0
+2019-11-08 08:12:45 HELLO WORLD
+2019-11-08 08:12:45 455
+2019-11-08 08:23:05 b'{"value":4094, "status":0}'
+2019-11-08 08:23:05 0
+2019-11-08 08:23:05 HELLO WORLD
+2019-11-08 08:23:05 456
+2019-11-08 08:33:25 b'{"value":4094, "status":0}'
+2019-11-08 08:33:25 0
+2019-11-08 08:33:25 HELLO WORLD
+2019-11-08 08:33:25 457
+2019-11-08 08:43:45 b'{"value":4094, "status":0}'
+2019-11-08 08:43:45 0
+2019-11-08 08:43:45 HELLO WORLD
+2019-11-08 08:43:46 458
+2019-11-08 08:50:19 <WSGIRequest: GET '/'>
+2019-11-08 08:50:19 458
+2019-11-08 08:50:19 0
+2019-11-08 08:50:20 <WSGIRequest: GET '/'>
+2019-11-08 08:50:20 458
+2019-11-08 08:50:20 0
+2019-11-08 08:54:06 b'{"value":4094, "status":0}'
+2019-11-08 08:54:06 0
+2019-11-08 08:54:06 HELLO WORLD
+2019-11-08 08:54:06 459
+2019-11-08 08:55:30 <WSGIRequest: GET '/'>
+2019-11-08 08:55:30 459
+2019-11-08 08:55:30 0
+2019-11-08 08:58:29 <WSGIRequest: GET '/'>
+2019-11-08 08:58:29 459
+2019-11-08 08:58:29 0
+2019-11-08 09:04:25 b'{"value":4094, "status":0}'
+2019-11-08 09:04:25 0
+2019-11-08 09:04:25 HELLO WORLD
+2019-11-08 09:04:25 460
+2019-11-08 09:14:46 b'{"value":4094, "status":0}'
+2019-11-08 09:14:46 0
+2019-11-08 09:14:46 HELLO WORLD
+2019-11-08 09:14:46 461
+2019-11-08 09:18:14 <WSGIRequest: GET '/'>
+2019-11-08 09:18:14 461
+2019-11-08 09:18:14 0
+2019-11-08 09:25:06 b'{"value":4094, "status":0}'
+2019-11-08 09:25:06 0
+2019-11-08 09:25:06 HELLO WORLD
+2019-11-08 09:25:06 462
+2019-11-08 09:35:27 b'{"value":4094, "status":0}'
+2019-11-08 09:35:27 0
+2019-11-08 09:35:27 HELLO WORLD
+2019-11-08 09:35:27 463
+2019-11-08 09:44:57 <WSGIRequest: GET '/'>
+2019-11-08 09:44:57 463
+2019-11-08 09:44:57 0
+2019-11-08 09:45:46 b'{"value":4094, "status":0}'
+2019-11-08 09:45:46 0
+2019-11-08 09:45:46 HELLO WORLD
+2019-11-08 09:45:46 464
+2019-11-08 09:56:07 b'{"value":4094, "status":0}'
+2019-11-08 09:56:07 0
+2019-11-08 09:56:07 HELLO WORLD
+2019-11-08 09:56:07 465
+2019-11-08 10:05:31 <WSGIRequest: GET '/'>
+2019-11-08 10:05:31 465
+2019-11-08 10:05:31 0
+2019-11-08 10:06:27 b'{"value":4094, "status":0}'
+2019-11-08 10:06:27 0
+2019-11-08 10:06:27 HELLO WORLD
+2019-11-08 10:06:27 466
+2019-11-08 10:09:32 <WSGIRequest: GET '/'>
+2019-11-08 10:09:32 466
+2019-11-08 10:09:32 0
+2019-11-08 10:16:47 b'{"value":4094, "status":0}'
+2019-11-08 10:16:47 0
+2019-11-08 10:16:47 HELLO WORLD
+2019-11-08 10:16:48 467
+2019-11-08 10:17:46 <WSGIRequest: GET '/'>
+2019-11-08 10:17:46 467
+2019-11-08 10:17:46 0
+2019-11-08 10:27:07 b'{"value":4094, "status":0}'
+2019-11-08 10:27:07 0
+2019-11-08 10:27:07 HELLO WORLD
+2019-11-08 10:27:07 468
+2019-11-08 10:37:28 b'{"value":4094, "status":0}'
+2019-11-08 10:37:28 0
+2019-11-08 10:37:28 HELLO WORLD
+2019-11-08 10:37:28 469
+2019-11-08 10:47:48 b'{"value":4094, "status":0}'
+2019-11-08 10:47:48 0
+2019-11-08 10:47:48 HELLO WORLD
+2019-11-08 10:47:48 470
+2019-11-08 10:58:09 b'{"value":4094, "status":0}'
+2019-11-08 10:58:09 0
+2019-11-08 10:58:09 HELLO WORLD
+2019-11-08 10:58:09 471
+2019-11-08 11:01:43 <WSGIRequest: GET '/'>
+2019-11-08 11:01:43 471
+2019-11-08 11:01:43 0
+2019-11-08 11:07:49 <WSGIRequest: GET '/'>
+2019-11-08 11:07:49 471
+2019-11-08 11:07:49 0
+2019-11-08 11:07:52 <WSGIRequest: GET '/'>
+2019-11-08 11:07:52 471
+2019-11-08 11:07:52 0
+2019-11-08 11:07:53 <WSGIRequest: GET '/'>
+2019-11-08 11:07:53 471
+2019-11-08 11:07:53 0
+2019-11-08 11:07:54 <WSGIRequest: GET '/'>
+2019-11-08 11:07:54 471
+2019-11-08 11:07:54 0
+2019-11-08 11:08:29 b'{"value":4094, "status":0}'
+2019-11-08 11:08:29 0
+2019-11-08 11:08:29 HELLO WORLD
+2019-11-08 11:08:29 472
+2019-11-08 11:18:50 b'{"value":4060, "status":0}'
+2019-11-08 11:18:50 0
+2019-11-08 11:18:50 HELLO WORLD
+2019-11-08 11:18:50 473
+2019-11-08 11:18:50 <WSGIRequest: GET '/'>
+2019-11-08 11:18:50 473
+2019-11-08 11:18:50 0
+2019-11-08 11:18:51 Not Found: /favicon.ico
+2019-11-08 11:19:56 Not Found: /favicon.ico
+2019-11-08 11:20:00 <WSGIRequest: GET '/'>
+2019-11-08 11:20:00 473
+2019-11-08 11:20:00 0
+2019-11-08 11:24:09 <WSGIRequest: GET '/'>
+2019-11-08 11:24:09 473
+2019-11-08 11:24:09 0
+2019-11-08 11:29:10 b'{"value":4090, "status":0}'
+2019-11-08 11:29:10 0
+2019-11-08 11:29:10 HELLO WORLD
+2019-11-08 11:29:10 474
+2019-11-08 11:32:52 <WSGIRequest: GET '/'>
+2019-11-08 11:32:52 474
+2019-11-08 11:32:52 0
+2019-11-08 11:33:25 <WSGIRequest: GET '/'>
+2019-11-08 11:33:25 474
+2019-11-08 11:33:25 0
+2019-11-08 11:36:26 <WSGIRequest: GET '/'>
+2019-11-08 11:36:26 474
+2019-11-08 11:36:26 0
+2019-11-08 11:37:40 <WSGIRequest: GET '/'>
+2019-11-08 11:37:40 474
+2019-11-08 11:37:40 0
+2019-11-08 11:37:58 <WSGIRequest: GET '/'>
+2019-11-08 11:37:58 474
+2019-11-08 11:37:58 0
+2019-11-08 11:38:44 <WSGIRequest: GET '/'>
+2019-11-08 11:38:44 474
+2019-11-08 11:38:44 0
+2019-11-08 11:39:30 b'{"value":3761, "status":0}'
+2019-11-08 11:39:30 0
+2019-11-08 11:39:30 HELLO WORLD
+2019-11-08 11:39:30 475
+2019-11-08 11:39:39 <WSGIRequest: GET '/'>
+2019-11-08 11:39:39 475
+2019-11-08 11:39:39 0
+2019-11-08 11:45:00 <WSGIRequest: GET '/'>
+2019-11-08 11:45:00 475
+2019-11-08 11:45:00 0
+2019-11-08 11:47:52 <WSGIRequest: GET '/'>
+2019-11-08 11:47:52 475
+2019-11-08 11:47:52 0
+2019-11-08 11:48:31 <WSGIRequest: GET '/'>
+2019-11-08 11:48:31 475
+2019-11-08 11:48:31 0
+2019-11-08 11:49:33 <WSGIRequest: GET '/'>
+2019-11-08 11:49:33 475
+2019-11-08 11:49:33 0
+2019-11-08 11:49:38 <WSGIRequest: GET '/'>
+2019-11-08 11:49:38 475
+2019-11-08 11:49:38 0
+2019-11-08 11:49:51 b'{"value":2987, "status":0}'
+2019-11-08 11:49:51 0
+2019-11-08 11:49:51 HELLO WORLD
+2019-11-08 11:49:51 476
+2019-11-08 11:50:09 <WSGIRequest: GET '/'>
+2019-11-08 11:50:09 476
+2019-11-08 11:50:09 0
+2019-11-08 11:50:10 Not Found: /favicon.ico
+2019-11-08 11:51:18 <WSGIRequest: GET '/'>
+2019-11-08 11:51:18 476
+2019-11-08 11:51:18 0
+2019-11-08 11:51:51 <WSGIRequest: GET '/'>
+2019-11-08 11:51:51 476
+2019-11-08 11:51:51 0
+2019-11-08 11:51:57 <WSGIRequest: GET '/'>
+2019-11-08 11:51:57 476
+2019-11-08 11:51:57 0
+2019-11-08 11:52:14 <WSGIRequest: GET '/'>
+2019-11-08 11:52:14 476
+2019-11-08 11:52:14 0
+2019-11-08 11:52:48 <WSGIRequest: GET '/'>
+2019-11-08 11:52:48 476
+2019-11-08 11:52:48 0
+2019-11-08 11:52:52 <WSGIRequest: GET '/'>
+2019-11-08 11:52:52 476
+2019-11-08 11:52:52 0
+2019-11-08 11:52:55 <WSGIRequest: GET '/'>
+2019-11-08 11:52:55 476
+2019-11-08 11:52:55 0
+2019-11-08 11:53:45 <WSGIRequest: GET '/'>
+2019-11-08 11:53:45 476
+2019-11-08 11:53:45 0
+2019-11-08 11:54:29 <WSGIRequest: GET '/'>
+2019-11-08 11:54:29 476
+2019-11-08 11:54:29 0
+2019-11-08 11:55:07 <WSGIRequest: GET '/'>
+2019-11-08 11:55:07 476
+2019-11-08 11:55:07 0
+2019-11-08 11:56:07 <WSGIRequest: GET '/'>
+2019-11-08 11:56:07 476
+2019-11-08 11:56:07 0
+2019-11-08 11:56:24 <WSGIRequest: GET '/'>
+2019-11-08 11:56:24 476
+2019-11-08 11:56:24 0
+2019-11-08 11:56:43 Not Found: /favicon.ico
+2019-11-08 11:56:43 <WSGIRequest: GET '/'>
+2019-11-08 11:56:43 476
+2019-11-08 11:56:43 0
+2019-11-08 11:57:22 <WSGIRequest: GET '/'>
+2019-11-08 11:57:22 476
+2019-11-08 11:57:22 0
+2019-11-08 11:57:55 <WSGIRequest: GET '/'>
+2019-11-08 11:57:55 476
+2019-11-08 11:57:55 0
+2019-11-08 11:58:10 <WSGIRequest: GET '/'>
+2019-11-08 11:58:10 476
+2019-11-08 11:58:10 0
+2019-11-08 11:59:07 <WSGIRequest: GET '/'>
+2019-11-08 11:59:07 476
+2019-11-08 11:59:07 0
+2019-11-08 11:59:13 <WSGIRequest: GET '/'>
+2019-11-08 11:59:13 476
+2019-11-08 11:59:13 0
+2019-11-08 11:59:19 <WSGIRequest: GET '/'>
+2019-11-08 11:59:19 476
+2019-11-08 11:59:19 0
+2019-11-08 11:59:29 <WSGIRequest: GET '/'>
+2019-11-08 11:59:29 476
+2019-11-08 11:59:29 0
+2019-11-08 11:59:44 <WSGIRequest: GET '/'>
+2019-11-08 11:59:44 476
+2019-11-08 11:59:44 0
+2019-11-08 11:59:55 <WSGIRequest: GET '/'>
+2019-11-08 11:59:55 476
+2019-11-08 11:59:55 0
+2019-11-08 12:00:05 <WSGIRequest: GET '/'>
+2019-11-08 12:00:05 476
+2019-11-08 12:00:05 0
+2019-11-08 12:00:07 <WSGIRequest: GET '/'>
+2019-11-08 12:00:07 476
+2019-11-08 12:00:07 0
+2019-11-08 12:00:11 b'{"value":2189, "status":0}'
+2019-11-08 12:00:11 0
+2019-11-08 12:00:11 HELLO WORLD
+2019-11-08 12:00:11 477
+2019-11-08 12:00:11 <WSGIRequest: GET '/'>
+2019-11-08 12:00:11 477
+2019-11-08 12:00:11 0
+2019-11-08 12:00:47 <WSGIRequest: GET '/'>
+2019-11-08 12:00:47 477
+2019-11-08 12:00:47 0
+2019-11-08 12:01:02 <WSGIRequest: GET '/'>
+2019-11-08 12:01:02 477
+2019-11-08 12:01:02 0
+2019-11-08 12:01:07 <WSGIRequest: GET '/'>
+2019-11-08 12:01:07 477
+2019-11-08 12:01:07 0
+2019-11-08 12:03:10 *** Starting uWSGI 2.0.17.1 (64bit) on [Fri Nov  8 12:03:08 2019] ***
+2019-11-08 12:03:10 compiled with version: 5.4.0 20160609 on 22 July 2019 12:42:05
+2019-11-08 12:03:10 os: Linux-4.4.0-1087-aws #98 SMP Mon Jul 22 11:53:46 UTC 2019
+2019-11-08 12:03:10 nodename: blue-liveweb13
+2019-11-08 12:03:10 machine: x86_64
+2019-11-08 12:03:10 clock source: unix
+2019-11-08 12:03:10 pcre jit disabled
+2019-11-08 12:03:10 detected number of CPU cores: 2
+2019-11-08 12:03:10 current working directory: (unreachable)/etc/uwsgi/vassals
+2019-11-08 12:03:10 detected binary path: /usr/local/bin/uwsgi
+2019-11-08 12:03:10 *** dumping internal routing table ***
+2019-11-08 12:03:10 [rule: 0] subject: path_info regexp: \.svgz$ action: addheader:Content-Encoding:gzip
+2019-11-08 12:03:10 *** end of the internal routing table ***
+2019-11-08 12:03:10 chdir() to /home/nishantsachdeva/DjangoServerEsw/server
+2019-11-08 12:03:10 limiting number of processes to 60...
+2019-11-08 12:03:10 your processes number limit is 60
+2019-11-08 12:03:10 your memory page size is 4096 bytes
+2019-11-08 12:03:10 detected max file descriptor number: 123456
+2019-11-08 12:03:10 building mime-types dictionary from file /etc/mime.types...
+2019-11-08 12:03:10 552 entry found
+2019-11-08 12:03:10 lock engine: pthread robust mutexes
+2019-11-08 12:03:10 thunder lock: disabled (you can enable it with --thunder-lock)
+2019-11-08 12:03:10 uwsgi socket 0 bound to UNIX address /var/sockets/nishantsachdeva.pythonanywhere.com/socket fd 3
+2019-11-08 12:03:10 Python version: 3.6.6 (default, Aug 22 2018, 20:46:46)  [GCC 5.4.0 20160609]
+2019-11-08 12:03:10 Set PythonHome to /home/nishantsachdeva/.virtualenvs/myvirtualenv
+2019-11-08 12:03:10 *** Python threads support is disabled. You can enable it with --enable-threads ***
+2019-11-08 12:03:10 Python main interpreter initialized at 0x24581f0
+2019-11-08 12:03:10 your server socket listen backlog is limited to 100 connections
+2019-11-08 12:03:10 your mercy for graceful operations on workers is 60 seconds
+2019-11-08 12:03:10 setting request body buffering size to 65536 bytes
+2019-11-08 12:03:10 mapped 334256 bytes (326 KB) for 1 cores
+2019-11-08 12:03:10 *** Operational MODE: single process ***
+2019-11-08 12:03:10 initialized 38 metrics
+2019-11-08 12:03:10 WSGI app 0 (mountpoint='') ready in 2 seconds on interpreter 0x24581f0 pid: 1 (default app)
+2019-11-08 12:03:10 *** uWSGI is running in multiple interpreter mode ***
+2019-11-08 12:03:10 gracefully (RE)spawned uWSGI master process (pid: 1)
+2019-11-08 12:03:10 spawned uWSGI worker 1 (pid: 3, cores: 1)
+2019-11-08 12:03:10 metrics collector thread started
+2019-11-08 12:03:10 spawned 2 offload threads for uWSGI worker 1
+2019-11-08 12:03:10 <WSGIRequest: GET '/'>
+2019-11-08 12:03:10 1
+2019-11-08 12:03:10 0
+2019-11-08 12:03:11 announcing my loyalty to the Emperor...
+2019-11-08 12:03:12 <WSGIRequest: GET '/'>
+2019-11-08 12:03:12 1
+2019-11-08 12:03:12 0
+2019-11-08 12:03:14 <WSGIRequest: GET '/'>
+2019-11-08 12:03:14 1
+2019-11-08 12:03:14 0
+2019-11-08 12:03:17 ...brutally killing workers...
+2019-11-08 12:03:17 Fri Nov  8 12:03:17 2019 - received message 0 from emperor
+2019-11-08 12:03:44 *** Starting uWSGI 2.0.17.1 (64bit) on [Fri Nov  8 12:03:42 2019] ***
+2019-11-08 12:03:44 compiled with version: 5.4.0 20160609 on 22 July 2019 12:42:05
+2019-11-08 12:03:44 os: Linux-4.4.0-1087-aws #98 SMP Mon Jul 22 11:53:46 UTC 2019
+2019-11-08 12:03:44 nodename: blue-liveweb8
+2019-11-08 12:03:44 machine: x86_64
+2019-11-08 12:03:44 clock source: unix
+2019-11-08 12:03:44 pcre jit disabled
+2019-11-08 12:03:44 detected number of CPU cores: 2
+2019-11-08 12:03:44 current working directory: (unreachable)/etc/uwsgi/vassals
+2019-11-08 12:03:44 detected binary path: /usr/local/bin/uwsgi
+2019-11-08 12:03:44 *** dumping internal routing table ***
+2019-11-08 12:03:44 [rule: 0] subject: path_info regexp: \.svgz$ action: addheader:Content-Encoding:gzip
+2019-11-08 12:03:44 *** end of the internal routing table ***
+2019-11-08 12:03:44 chdir() to /home/nishantsachdeva/DjangoServerEsw/server
+2019-11-08 12:03:44 limiting number of processes to 60...
+2019-11-08 12:03:44 your processes number limit is 60
+2019-11-08 12:03:44 your memory page size is 4096 bytes
+2019-11-08 12:03:44 detected max file descriptor number: 123456
+2019-11-08 12:03:44 building mime-types dictionary from file /etc/mime.types...
+2019-11-08 12:03:44 552 entry found
+2019-11-08 12:03:44 lock engine: pthread robust mutexes
+2019-11-08 12:03:44 thunder lock: disabled (you can enable it with --thunder-lock)
+2019-11-08 12:03:44 uwsgi socket 0 bound to UNIX address /var/sockets/nishantsachdeva.pythonanywhere.com/socket fd 3
+2019-11-08 12:03:44 Python version: 3.6.6 (default, Aug 22 2018, 20:46:46)  [GCC 5.4.0 20160609]
+2019-11-08 12:03:44 Set PythonHome to /home/nishantsachdeva/.virtualenvs/myvirtualenv
+2019-11-08 12:03:44 *** Python threads support is disabled. You can enable it with --enable-threads ***
+2019-11-08 12:03:44 Python main interpreter initialized at 0xc0e1f0
+2019-11-08 12:03:44 your server socket listen backlog is limited to 100 connections
+2019-11-08 12:03:44 your mercy for graceful operations on workers is 60 seconds
+2019-11-08 12:03:44 setting request body buffering size to 65536 bytes
+2019-11-08 12:03:44 mapped 334256 bytes (326 KB) for 1 cores
+2019-11-08 12:03:44 *** Operational MODE: single process ***
+2019-11-08 12:03:44 initialized 38 metrics
+2019-11-08 12:03:44 WSGI app 0 (mountpoint='') ready in 2 seconds on interpreter 0xc0e1f0 pid: 1 (default app)
+2019-11-08 12:03:44 *** uWSGI is running in multiple interpreter mode ***
+2019-11-08 12:03:44 gracefully (RE)spawned uWSGI master process (pid: 1)
+2019-11-08 12:03:44 spawned uWSGI worker 1 (pid: 3, cores: 1)
+2019-11-08 12:03:44 metrics collector thread started
+2019-11-08 12:03:44 spawned 2 offload threads for uWSGI worker 1
+2019-11-08 12:03:44 <WSGIRequest: GET '/'>
+2019-11-08 12:03:44 1
+2019-11-08 12:03:44 0
+2019-11-08 12:03:44 announcing my loyalty to the Emperor...
+2019-11-08 12:03:44 <WSGIRequest: GET '/'>
+2019-11-08 12:03:44 1
+2019-11-08 12:03:44 0
+2019-11-08 12:03:46 <WSGIRequest: GET '/'>
+2019-11-08 12:03:46 1
+2019-11-08 12:03:46 0
+2019-11-08 12:03:58 <WSGIRequest: GET '/'>
+2019-11-08 12:03:58 1
+2019-11-08 12:03:58 0
+2019-11-08 12:04:00 <WSGIRequest: GET '/'>
+2019-11-08 12:04:00 1
+2019-11-08 12:04:00 0
+2019-11-08 12:04:00 <WSGIRequest: GET '/'>
+2019-11-08 12:04:00 1
+2019-11-08 12:04:00 0
+2019-11-08 12:04:03 <WSGIRequest: GET '/'>
+2019-11-08 12:04:03 1
+2019-11-08 12:04:03 0
+2019-11-08 12:04:09 <WSGIRequest: GET '/'>
+2019-11-08 12:04:09 1
+2019-11-08 12:04:09 0
+2019-11-08 12:04:13 <WSGIRequest: GET '/'>
+2019-11-08 12:04:13 1
+2019-11-08 12:04:13 0
+2019-11-08 12:04:15 <WSGIRequest: GET '/'>
+2019-11-08 12:04:15 1
+2019-11-08 12:04:15 0
+2019-11-08 12:04:20 <WSGIRequest: GET '/'>
+2019-11-08 12:04:20 1
+2019-11-08 12:04:20 0
+2019-11-08 12:05:16 <WSGIRequest: GET '/'>
+2019-11-08 12:05:16 1
+2019-11-08 12:05:16 0
+2019-11-08 12:05:27 <WSGIRequest: GET '/'>
+2019-11-08 12:05:27 1
+2019-11-08 12:05:27 0
+2019-11-08 12:05:49 <WSGIRequest: GET '/'>
+2019-11-08 12:05:49 1
+2019-11-08 12:05:49 0
+2019-11-08 12:06:38 <WSGIRequest: GET '/'>
+2019-11-08 12:06:38 1
+2019-11-08 12:06:38 0
+2019-11-08 12:07:03 <WSGIRequest: GET '/'>
+2019-11-08 12:07:03 1
+2019-11-08 12:07:03 0
+2019-11-08 12:08:21 <WSGIRequest: GET '/'>
+2019-11-08 12:08:21 1
+2019-11-08 12:08:21 0
+2019-11-08 12:09:12 <WSGIRequest: GET '/'>
+2019-11-08 12:09:12 1
+2019-11-08 12:09:12 0
+2019-11-08 12:10:21 <WSGIRequest: GET '/'>
+2019-11-08 12:10:21 1
+2019-11-08 12:10:21 0
+2019-11-08 12:10:31 b'{"value":1251, "status":1}'
+2019-11-08 12:10:31 1
+2019-11-08 12:10:31 HELLO WORLD
+2019-11-08 12:10:31 478
+2019-11-08 12:10:33 <WSGIRequest: GET '/'>
+2019-11-08 12:10:33 478
+2019-11-08 12:10:33 0
+2019-11-08 12:10:46 <WSGIRequest: GET '/'>
+2019-11-08 12:10:46 478
+2019-11-08 12:10:46 0
+2019-11-08 12:11:13 <WSGIRequest: GET '/'>
+2019-11-08 12:11:13 478
+2019-11-08 12:11:13 0
+2019-11-08 12:12:31 <WSGIRequest: GET '/'>
+2019-11-08 12:12:31 478
+2019-11-08 12:12:31 0
+2019-11-08 12:14:24 <WSGIRequest: GET '/'>
+2019-11-08 12:14:24 478
+2019-11-08 12:14:24 0
+2019-11-08 12:16:35 <WSGIRequest: GET '/'>
+2019-11-08 12:16:35 478
+2019-11-08 12:16:35 0
+2019-11-08 12:20:51 b'{"value":290, "status":1}'
+2019-11-08 12:20:51 1
+2019-11-08 12:20:51 HELLO WORLD
+2019-11-08 12:20:51 479
+2019-11-08 12:25:03 <WSGIRequest: GET '/'>
+2019-11-08 12:25:03 479
+2019-11-08 12:25:03 0
+2019-11-08 12:28:48 <WSGIRequest: GET '/'>
+2019-11-08 12:28:48 479
+2019-11-08 12:28:48 0
+2019-11-08 12:31:12 b'{"value":0, "status":1}'
+2019-11-08 12:31:12 1
+2019-11-08 12:31:12 HELLO WORLD
+2019-11-08 12:31:12 480
+2019-11-08 12:34:25 <WSGIRequest: GET '/'>
+2019-11-08 12:34:25 480
+2019-11-08 12:34:25 0
+2019-11-08 12:35:19 <WSGIRequest: GET '/'>
+2019-11-08 12:35:19 480
+2019-11-08 12:35:19 0
+2019-11-08 12:35:20 Not Found: /favicon.ico
+2019-11-08 12:35:31 <WSGIRequest: GET '/'>
+2019-11-08 12:35:31 480
+2019-11-08 12:35:31 0
+2019-11-08 12:35:50 <WSGIRequest: GET '/'>
+2019-11-08 12:35:50 480
+2019-11-08 12:35:50 0
+2019-11-08 12:37:51 <WSGIRequest: GET '/'>
+2019-11-08 12:37:51 480
+2019-11-08 12:37:51 0
+2019-11-08 12:41:32 b'{"value":0, "status":1}'
+2019-11-08 12:41:32 1
+2019-11-08 12:41:32 HELLO WORLD
+2019-11-08 12:41:32 481
+2019-11-08 12:51:52 b'{"value":0, "status":1}'
+2019-11-08 12:51:52 1
+2019-11-08 12:51:52 HELLO WORLD
+2019-11-08 12:51:52 482
+2019-11-08 12:58:58 <WSGIRequest: GET '/'>
+2019-11-08 12:58:58 482
+2019-11-08 12:58:58 0
+2019-11-08 12:58:58 Not Found: /favicon.ico
+2019-11-08 13:02:13 b'{"value":0, "status":1}'
+2019-11-08 13:02:13 1
+2019-11-08 13:02:13 HELLO WORLD
+2019-11-08 13:02:13 483
+2019-11-08 13:03:39 <WSGIRequest: GET '/'>
+2019-11-08 13:03:39 483
+2019-11-08 13:03:39 0
+2019-11-08 13:05:23 <WSGIRequest: GET '/'>
+2019-11-08 13:05:23 483
+2019-11-08 13:05:23 0
+2019-11-08 13:12:34 b'{"value":0, "status":1}'
+2019-11-08 13:12:34 1
+2019-11-08 13:12:34 HELLO WORLD
+2019-11-08 13:12:34 484
+2019-11-08 13:17:39 <WSGIRequest: GET '/'>
+2019-11-08 13:17:39 484
+2019-11-08 13:17:39 0
+2019-11-08 13:22:55 b'{"value":0, "status":1}'
+2019-11-08 13:22:55 1
+2019-11-08 13:22:55 HELLO WORLD
+2019-11-08 13:22:55 485
+2019-11-08 13:29:00 Not Found: /favicon.ico
+2019-11-08 13:29:03 <WSGIRequest: GET '/'>
+2019-11-08 13:29:03 485
+2019-11-08 13:29:03 0
+2019-11-08 13:33:15 b'{"value":0, "status":1}'
+2019-11-08 13:33:15 1
+2019-11-08 13:33:15 HELLO WORLD
+2019-11-08 13:33:15 486
+2019-11-08 13:43:36 b'{"value":0, "status":1}'
+2019-11-08 13:43:36 1
+2019-11-08 13:43:36 HELLO WORLD
+2019-11-08 13:43:36 487
+2019-11-08 13:53:56 b'{"value":0, "status":1}'
+2019-11-08 13:53:56 1
+2019-11-08 13:53:56 HELLO WORLD
+2019-11-08 13:53:56 488
+2019-11-08 14:04:17 b'{"value":0, "status":1}'
+2019-11-08 14:04:17 1
+2019-11-08 14:04:17 HELLO WORLD
+2019-11-08 14:04:17 489
+2019-11-08 14:14:37 b'{"value":0, "status":1}'
+2019-11-08 14:14:37 1
+2019-11-08 14:14:37 HELLO WORLD
+2019-11-08 14:14:37 490
+2019-11-08 14:24:58 b'{"value":0, "status":1}'
+2019-11-08 14:24:58 1
+2019-11-08 14:24:58 HELLO WORLD
+2019-11-08 14:24:58 491
+2019-11-08 14:35:18 b'{"value":0, "status":1}'
+2019-11-08 14:35:18 1
+2019-11-08 14:35:18 HELLO WORLD
+2019-11-08 14:35:18 492
+2019-11-08 14:45:38 b'{"value":0, "status":1}'
+2019-11-08 14:45:38 1
+2019-11-08 14:45:38 HELLO WORLD
+2019-11-08 14:45:38 493
+2019-11-08 14:55:58 <WSGIRequest: GET '/'>
+2019-11-08 14:55:58 493
+2019-11-08 14:55:58 0
+2019-11-08 14:55:58 b'{"value":0, "status":1}'
+2019-11-08 14:55:58 1
+2019-11-08 14:55:58 HELLO WORLD
+2019-11-08 14:55:58 494
+2019-11-08 15:06:19 b'{"value":0, "status":1}'
+2019-11-08 15:06:19 1
+2019-11-08 15:06:19 HELLO WORLD
+2019-11-08 15:06:19 495
+2019-11-08 15:16:40 b'{"value":0, "status":1}'
+2019-11-08 15:16:40 1
+2019-11-08 15:16:40 HELLO WORLD
+2019-11-08 15:16:40 496
+2019-11-08 15:27:00 b'{"value":0, "status":1}'
+2019-11-08 15:27:00 1
+2019-11-08 15:27:00 HELLO WORLD
+2019-11-08 15:27:00 497
+2019-11-08 15:37:21 b'{"value":0, "status":1}'
+2019-11-08 15:37:21 1
+2019-11-08 15:37:21 HELLO WORLD
+2019-11-08 15:37:21 498
+2019-11-08 15:47:41 b'{"value":0, "status":1}'
+2019-11-08 15:47:41 1
+2019-11-08 15:47:41 HELLO WORLD
+2019-11-08 15:47:41 499
+2019-11-08 15:58:02 b'{"value":0, "status":1}'
+2019-11-08 15:58:02 1
+2019-11-08 15:58:02 HELLO WORLD
+2019-11-08 15:58:02 500
+2019-11-08 16:08:22 b'{"value":0, "status":1}'
+2019-11-08 16:08:22 1
+2019-11-08 16:08:22 HELLO WORLD
+2019-11-08 16:08:22 501
+2019-11-08 16:18:42 b'{"value":0, "status":1}'
+2019-11-08 16:18:42 1
+2019-11-08 16:18:42 HELLO WORLD
+2019-11-08 16:18:43 502
+2019-11-08 16:29:03 b'{"value":0, "status":1}'
+2019-11-08 16:29:03 1
+2019-11-08 16:29:03 HELLO WORLD
+2019-11-08 16:29:03 503
+2019-11-08 16:39:24 b'{"value":0, "status":1}'
+2019-11-08 16:39:24 1
+2019-11-08 16:39:24 HELLO WORLD
+2019-11-08 16:39:24 504
+2019-11-08 16:49:45 b'{"value":0, "status":1}'
+2019-11-08 16:49:45 1
+2019-11-08 16:49:45 HELLO WORLD
+2019-11-08 16:49:45 505
+2019-11-08 17:00:06 b'{"value":0, "status":1}'
+2019-11-08 17:00:06 1
+2019-11-08 17:00:06 HELLO WORLD
+2019-11-08 17:00:06 506
+2019-11-08 17:03:04 <WSGIRequest: GET '/'>
+2019-11-08 17:03:04 506
+2019-11-08 17:03:04 0
+2019-11-08 17:10:26 b'{"value":0, "status":1}'
+2019-11-08 17:10:26 1
+2019-11-08 17:10:26 HELLO WORLD
+2019-11-08 17:10:26 507
+2019-11-08 17:20:47 b'{"value":0, "status":1}'
+2019-11-08 17:20:47 1
+2019-11-08 17:20:47 HELLO WORLD
+2019-11-08 17:20:47 508
+2019-11-08 17:31:07 b'{"value":0, "status":1}'
+2019-11-08 17:31:07 1
+2019-11-08 17:31:07 HELLO WORLD
+2019-11-08 17:31:07 509
+2019-11-08 17:35:28 Not Found: /favicon.ico
+2019-11-08 17:35:30 <WSGIRequest: GET '/'>
+2019-11-08 17:35:30 509
+2019-11-08 17:35:30 0
+2019-11-08 17:41:27 b'{"value":0, "status":1}'
+2019-11-08 17:41:27 1
+2019-11-08 17:41:27 HELLO WORLD
+2019-11-08 17:41:27 510
+2019-11-08 17:51:47 b'{"value":0, "status":1}'
+2019-11-08 17:51:47 1
+2019-11-08 17:51:47 HELLO WORLD
+2019-11-08 17:51:47 511
+2019-11-08 18:02:08 b'{"value":0, "status":1}'
+2019-11-08 18:02:08 1
+2019-11-08 18:02:08 HELLO WORLD
+2019-11-08 18:02:08 512
+2019-11-08 18:12:28 b'{"value":0, "status":1}'
+2019-11-08 18:12:28 1
+2019-11-08 18:12:28 HELLO WORLD
+2019-11-08 18:12:28 513
+2019-11-08 18:22:48 b'{"value":0, "status":1}'
+2019-11-08 18:22:48 1
+2019-11-08 18:22:48 HELLO WORLD
+2019-11-08 18:22:48 514
+2019-11-08 18:33:09 b'{"value":0, "status":1}'
+2019-11-08 18:33:09 1
+2019-11-08 18:33:09 HELLO WORLD
+2019-11-08 18:33:09 515
+2019-11-08 18:43:29 b'{"value":0, "status":1}'
+2019-11-08 18:43:29 1
+2019-11-08 18:43:29 HELLO WORLD
+2019-11-08 18:43:29 516
+2019-11-08 18:53:49 b'{"value":0, "status":1}'
+2019-11-08 18:53:49 1
+2019-11-08 18:53:49 HELLO WORLD
+2019-11-08 18:53:49 517
+2019-11-08 19:04:09 b'{"value":0, "status":1}'
+2019-11-08 19:04:09 1
+2019-11-08 19:04:09 HELLO WORLD
+2019-11-08 19:04:09 518
+2019-11-08 19:14:29 b'{"value":0, "status":1}'
+2019-11-08 19:14:29 1
+2019-11-08 19:14:29 HELLO WORLD
+2019-11-08 19:14:29 519
+2019-11-08 19:24:50 b'{"value":0, "status":1}'
+2019-11-08 19:24:50 1
+2019-11-08 19:24:50 HELLO WORLD
+2019-11-08 19:24:50 520
+2019-11-08 19:35:10 b'{"value":0, "status":1}'
+2019-11-08 19:35:10 1
+2019-11-08 19:35:10 HELLO WORLD
+2019-11-08 19:35:10 521
+2019-11-08 19:55:51 b'{"value":0, "status":1}'
+2019-11-08 19:55:51 1
+2019-11-08 19:55:51 HELLO WORLD
+2019-11-08 19:55:51 523
+2019-11-08 20:06:11 b'{"value":0, "status":1}'
+2019-11-08 20:06:11 1
+2019-11-08 20:06:11 HELLO WORLD
+2019-11-08 20:06:11 524
+2019-11-08 20:16:32 b'{"value":0, "status":1}'
+2019-11-08 20:16:32 1
+2019-11-08 20:16:32 HELLO WORLD
+2019-11-08 20:16:32 525
+2019-11-08 20:26:52 b'{"value":0, "status":1}'
+2019-11-08 20:26:52 1
+2019-11-08 20:26:52 HELLO WORLD
+2019-11-08 20:26:52 526
+2019-11-08 20:37:13 b'{"value":0, "status":1}'
+2019-11-08 20:37:13 1
+2019-11-08 20:37:13 HELLO WORLD
+2019-11-08 20:37:13 527
+2019-11-08 20:47:34 b'{"value":0, "status":1}'
+2019-11-08 20:47:34 1
+2019-11-08 20:47:34 HELLO WORLD
+2019-11-08 20:47:34 528
+2019-11-08 20:57:54 b'{"value":0, "status":1}'
+2019-11-08 20:57:54 1
+2019-11-08 20:57:54 HELLO WORLD
+2019-11-08 20:57:54 529
+2019-11-08 21:08:15 b'{"value":0, "status":1}'
+2019-11-08 21:08:15 1
+2019-11-08 21:08:15 HELLO WORLD
+2019-11-08 21:08:15 530
+2019-11-08 21:18:35 b'{"value":0, "status":1}'
+2019-11-08 21:18:35 1
+2019-11-08 21:18:35 HELLO WORLD
+2019-11-08 21:18:35 531
+2019-11-08 21:28:56 b'{"value":0, "status":1}'
+2019-11-08 21:28:56 1
+2019-11-08 21:28:56 HELLO WORLD
+2019-11-08 21:28:56 532
+2019-11-08 21:39:16 b'{"value":0, "status":1}'
+2019-11-08 21:39:16 1
+2019-11-08 21:39:16 HELLO WORLD
+2019-11-08 21:39:16 533
+2019-11-08 21:49:37 b'{"value":0, "status":1}'
+2019-11-08 21:49:37 1
+2019-11-08 21:49:37 HELLO WORLD
+2019-11-08 21:49:37 534
+2019-11-08 21:59:57 b'{"value":0, "status":1}'
+2019-11-08 21:59:57 1
+2019-11-08 21:59:57 HELLO WORLD
+2019-11-08 21:59:57 535
+2019-11-08 22:10:17 b'{"value":0, "status":1}'
+2019-11-08 22:10:17 1
+2019-11-08 22:10:17 HELLO WORLD
+2019-11-08 22:10:17 536
+2019-11-08 22:20:38 b'{"value":0, "status":1}'
+2019-11-08 22:20:38 1
+2019-11-08 22:20:38 HELLO WORLD
+2019-11-08 22:20:38 537
+2019-11-08 22:30:58 b'{"value":0, "status":1}'
+2019-11-08 22:30:58 1
+2019-11-08 22:30:58 HELLO WORLD
+2019-11-08 22:30:59 538
+2019-11-08 22:41:20 b'{"value":0, "status":1}'
+2019-11-08 22:41:20 1
+2019-11-08 22:41:20 HELLO WORLD
+2019-11-08 22:41:20 539
+2019-11-08 22:51:40 b'{"value":0, "status":1}'
+2019-11-08 22:51:40 1
+2019-11-08 22:51:40 HELLO WORLD
+2019-11-08 22:51:40 540
+2019-11-08 23:02:00 b'{"value":0, "status":1}'
+2019-11-08 23:02:00 1
+2019-11-08 23:02:00 HELLO WORLD
+2019-11-08 23:02:00 541
+2019-11-08 23:12:21 b'{"value":0, "status":1}'
+2019-11-08 23:12:21 1
+2019-11-08 23:12:21 HELLO WORLD
+2019-11-08 23:12:21 542
+2019-11-08 23:22:41 b'{"value":0, "status":1}'
+2019-11-08 23:22:41 1
+2019-11-08 23:22:41 HELLO WORLD
+2019-11-08 23:22:41 543
+2019-11-08 23:33:01 b'{"value":0, "status":1}'
+2019-11-08 23:33:01 1
+2019-11-08 23:33:01 HELLO WORLD
+2019-11-08 23:33:01 544
+2019-11-08 23:43:21 b'{"value":0, "status":1}'
+2019-11-08 23:43:21 1
+2019-11-08 23:43:21 HELLO WORLD
+2019-11-08 23:43:22 545
+2019-11-08 23:53:42 b'{"value":0, "status":1}'
+2019-11-08 23:53:42 1
+2019-11-08 23:53:42 HELLO WORLD
+2019-11-08 23:53:42 546
+2019-11-09 00:04:02 b'{"value":0, "status":1}'
+2019-11-09 00:04:02 1
+2019-11-09 00:04:02 HELLO WORLD
+2019-11-09 00:04:03 547
+2019-11-09 00:14:23 b'{"value":0, "status":1}'
+2019-11-09 00:14:23 1
+2019-11-09 00:14:23 HELLO WORLD
+2019-11-09 00:14:23 548
+2019-11-09 00:24:44 b'{"value":0, "status":1}'
+2019-11-09 00:24:44 1
+2019-11-09 00:24:44 HELLO WORLD
+2019-11-09 00:24:44 549
+2019-11-09 00:35:05 b'{"value":0, "status":1}'
+2019-11-09 00:35:05 1
+2019-11-09 00:35:05 HELLO WORLD
+2019-11-09 00:35:05 550
+2019-11-09 00:55:45 b'{"value":1670, "status":1}'
+2019-11-09 00:55:45 1
+2019-11-09 00:55:45 HELLO WORLD
+2019-11-09 00:55:45 552
+2019-11-09 01:06:06 b'{"value":2665, "status":0}'
+2019-11-09 01:06:06 0
+2019-11-09 01:06:06 HELLO WORLD
+2019-11-09 01:06:06 553
+2019-11-09 01:16:26 b'{"value":3010, "status":0}'
+2019-11-09 01:16:26 0
+2019-11-09 01:16:26 HELLO WORLD
+2019-11-09 01:16:26 554
+2019-11-09 01:26:47 b'{"value":3941, "status":0}'
+2019-11-09 01:26:47 0
+2019-11-09 01:26:47 HELLO WORLD
+2019-11-09 01:26:47 555
+2019-11-09 01:37:08 b'{"value":4094, "status":0}'
+2019-11-09 01:37:08 0
+2019-11-09 01:37:08 HELLO WORLD
+2019-11-09 01:37:08 556
+2019-11-09 01:47:28 b'{"value":4094, "status":0}'
+2019-11-09 01:47:28 0
+2019-11-09 01:47:28 HELLO WORLD
+2019-11-09 01:47:28 557
+2019-11-09 01:57:49 b'{"value":4094, "status":0}'
+2019-11-09 01:57:49 0
+2019-11-09 01:57:49 HELLO WORLD
+2019-11-09 01:57:49 558
+2019-11-09 02:08:09 b'{"value":4094, "status":0}'
+2019-11-09 02:08:09 0
+2019-11-09 02:08:09 HELLO WORLD
+2019-11-09 02:08:09 559
+2019-11-09 02:18:29 b'{"value":4094, "status":0}'
+2019-11-09 02:18:29 0
+2019-11-09 02:18:29 HELLO WORLD
+2019-11-09 02:18:29 560
+2019-11-09 02:28:50 b'{"value":4094, "status":0}'
+2019-11-09 02:28:50 0
+2019-11-09 02:28:50 HELLO WORLD
+2019-11-09 02:28:50 561
+2019-11-09 02:39:10 b'{"value":4094, "status":0}'
+2019-11-09 02:39:10 0
+2019-11-09 02:39:10 HELLO WORLD
+2019-11-09 02:39:10 562
+2019-11-09 02:49:30 b'{"value":4094, "status":0}'
+2019-11-09 02:49:30 0
+2019-11-09 02:49:30 HELLO WORLD
+2019-11-09 02:49:30 563
+2019-11-09 02:59:51 b'{"value":4094, "status":0}'
+2019-11-09 02:59:51 0
+2019-11-09 02:59:51 HELLO WORLD
+2019-11-09 02:59:51 564
+2019-11-09 03:10:11 b'{"value":4094, "status":0}'
+2019-11-09 03:10:11 0
+2019-11-09 03:10:11 HELLO WORLD
+2019-11-09 03:10:11 565
+2019-11-09 03:14:32 Not Found: /favicon.ico
+2019-11-09 03:14:32 <WSGIRequest: GET '/'>
+2019-11-09 03:14:32 565
+2019-11-09 03:14:32 0
+2019-11-09 03:19:19 <WSGIRequest: GET '/'>
+2019-11-09 03:19:19 565
+2019-11-09 03:19:19 0
+2019-11-09 03:19:20 Not Found: /favicon.ico
+2019-11-09 03:20:32 b'{"value":4094, "status":0}'
+2019-11-09 03:20:32 0
+2019-11-09 03:20:32 HELLO WORLD
+2019-11-09 03:20:32 566
+2019-11-09 03:30:52 b'{"value":4094, "status":0}'
+2019-11-09 03:30:52 0
+2019-11-09 03:30:52 HELLO WORLD
+2019-11-09 03:30:52 567
+2019-11-09 03:41:13 b'{"value":4094, "status":0}'
+2019-11-09 03:41:13 0
+2019-11-09 03:41:13 HELLO WORLD
+2019-11-09 03:41:13 568
+2019-11-09 03:43:11 <WSGIRequest: GET '/'>
+2019-11-09 03:43:11 568
+2019-11-09 03:43:11 0
+2019-11-09 03:51:33 b'{"value":4094, "status":0}'
+2019-11-09 03:51:33 0
+2019-11-09 03:51:33 HELLO WORLD
+2019-11-09 03:51:33 569
+2019-11-09 04:01:54 b'{"value":4094, "status":0}'
+2019-11-09 04:01:54 0
+2019-11-09 04:01:54 HELLO WORLD
+2019-11-09 04:01:54 570
+2019-11-09 04:22:35 b'{"value":4094, "status":0}'
+2019-11-09 04:22:35 0
+2019-11-09 04:22:35 HELLO WORLD
+2019-11-09 04:22:35 572
+2019-11-09 04:32:55 b'{"value":4094, "status":0}'
+2019-11-09 04:32:55 0
+2019-11-09 04:32:55 HELLO WORLD
+2019-11-09 04:32:55 573
+2019-11-09 04:43:15 b'{"value":4094, "status":0}'
+2019-11-09 04:43:15 0
+2019-11-09 04:43:15 HELLO WORLD
+2019-11-09 04:43:15 574
+2019-11-09 04:53:36 b'{"value":4094, "status":0}'
+2019-11-09 04:53:36 0
+2019-11-09 04:53:36 HELLO WORLD
+2019-11-09 04:53:36 575
+2019-11-09 05:03:57 b'{"value":4094, "status":0}'
+2019-11-09 05:03:57 0
+2019-11-09 05:03:57 HELLO WORLD
+2019-11-09 05:03:57 576
+2019-11-09 05:14:21 b'{"value":4094, "status":0}'
+2019-11-09 05:14:21 0
+2019-11-09 05:14:21 HELLO WORLD
+2019-11-09 05:14:21 577
+2019-11-09 05:24:41 b'{"value":4094, "status":0}'
+2019-11-09 05:24:41 0
+2019-11-09 05:24:41 HELLO WORLD
+2019-11-09 05:24:41 578
