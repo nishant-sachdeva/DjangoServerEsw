@@ -15,12 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from django.conf.urls import url, include
+from django.conf.urls import url
 
 from readings.views import home_view, checkreq
-from readings.resources import ReadingResource
+# from readings.resources import ReadingResource
 # from readings.views import default_view
-reading_resource = ReadingResource()
+# reading_resource = ReadingResource()
 
 
 urlpatterns = [
