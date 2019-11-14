@@ -45,6 +45,15 @@ def call_bot(status):
     send_message(status, 932176409)
     send_message(status, 659265902)
 
+
+def send_post_to_onem2m(status, value):
+	obj = {
+		"value" : value, 
+		"status" : status,
+	}
+	response = requests.post('http://onem2m.iiit.ac.in', data=post_data)
+	content = response.content
+
 def checkreq(request):
 	'''
 	so here's the deal, this guy takes in the request and works on it
@@ -86,6 +95,9 @@ def checkreq(request):
 		id_object = Identity.objects.get(id=1)
 		id_object.Identity  = reading_obj.id
 		id_object.save()
+
+		# around here , we will send the post requests to the servers at onem2m
+		send_post_to_onem2m(y , x)  # y is the value and x is the status
 
 		if reading_obj.status == 1 :
 			call_bot("Lights are ON. Current reading is " +  str(y))
