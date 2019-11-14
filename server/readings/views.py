@@ -48,11 +48,12 @@ def call_bot(status):
 
 def send_post_to_onem2m(status, value):
 	obj = {
-		"value" : value, 
+		"value" : value,
 		"status" : status,
 	}
-	response = requests.post('http://onem2m.iiit.ac.in', data=post_data)
+	response = urllib.request.post('http://onem2m.iiit.ac.in', data=obj)
 	content = response.content
+	print("Response from onem2m server is" +str(content))
 
 def checkreq(request):
 	'''
