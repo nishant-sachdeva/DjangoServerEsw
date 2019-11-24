@@ -3,6 +3,8 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from django.utils import timezone
 
+import csv
+from django.utils.encoding import smart_str
 # here we will make our views from  the given data
 # I am guessing we will be receiving data using the admin thing
 # then we import it here, and the redirect it to our views I guess
@@ -18,7 +20,7 @@ import pytz
 # import sys
 # sys.path.append('/home/usename/.local/lib/python3.7/site-packages/')
 
-# import requests
+import requests
 # import time
 
 
@@ -46,7 +48,26 @@ def call_bot(status):
     send_message(status, 659265902)
 
 
+def download_csv_data(request):
+	# response content type
+	response = HttpResponse(content_type='text/csv')
+	#decide the file name
+	response['Content-Disposition'] = 'attachment; filename="ThePythonDjango.csv"'
 
+	writer = csv.writer(response, csv.excel)
+	response.write(u'\ufeff'.encode('utf8'))
+
+	#write the headers
+	writer.writerow([
+		smart_str(u"Values"),
+	])
+	#get data from database or from text file....
+	events = Reading.objects.all()
+	for event in events:
+		writer.writerow([
+			smart_str(event.value),
+		])
+	return response
 
 
 def send_post_to_onem2m(status , value):
@@ -60,7 +81,7 @@ def send_post_to_onem2m(status , value):
     payload = {
         "m2m:cin": {
             "cnf": "text/plain:0",
-            "con": val
+            "con": value
         }
     }
     headers = {
@@ -71,6 +92,7 @@ def send_post_to_onem2m(status , value):
     }
 
     r = requests.post(url, data=json.dumps(payload), headers=headers)
+    print(r)
 
 def checkreq(request):
 	'''
@@ -115,7 +137,11 @@ def checkreq(request):
 		id_object.save()
 
 		# around here , we will send the post requests to the servers at onem2m
-		send_post_to_onem2m(y , x)  # y is the value and x is the status
+		try:
+		    send_post_to_onem2m(y , x)  # y is the value and x is the status
+		except Exception as e:
+		    call_bot(str(e))
+		    print("onem2m failed")
 
 		if reading_obj.status == 1 :
 			call_bot("Lights are ON. Current reading is " +  str(y))
@@ -183,6 +209,8 @@ def home_view(request, *args, **kwargs):
 		},
 	}
 	return render(request, "home.html", context)
+
+
 
 '''
 curl --header "Content-Type: application/json" \
