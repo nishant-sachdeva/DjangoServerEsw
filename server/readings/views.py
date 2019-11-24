@@ -46,14 +46,31 @@ def call_bot(status):
     send_message(status, 659265902)
 
 
-def send_post_to_onem2m(status, value):
-	obj = {
-		"value" : value,
-		"status" : status,
-	}
-	response = urllib.request.post('http://onem2m.iiit.ac.in', data=obj)
-	content = response.content
-	print("Response from onem2m server is" +str(content))
+
+
+
+def send_post_to_onem2m(status , value):
+    cse_ip = "onem2m.iiit.ac.in"
+    cse_port = "443"
+    server = "http://"+cse_ip+":"+cse_port+"/~/in-cse/in-name/"
+    ae = "Team35_Street_lighting_And_building_entrances_based_on_daylight"
+    cnt = "node_1"
+
+    url = server + ae + "/" + cnt + "/"
+    payload = {
+        "m2m:cin": {
+            "cnf": "text/plain:0",
+            "con": val
+        }
+    }
+    headers = {
+        "X-M2M-Origin": "admin:admin",
+        "Content-Type": "application/json;ty=4",
+        "Content-Length": "100",
+        "Connection": "close"
+    }
+
+    r = requests.post(url, data=json.dumps(payload), headers=headers)
 
 def checkreq(request):
 	'''
