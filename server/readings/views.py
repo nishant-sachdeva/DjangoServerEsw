@@ -71,28 +71,28 @@ def download_csv_data(request):
 
 
 def send_post_to_onem2m(status , value):
-    cse_ip = "onem2m.iiit.ac.in"
-    cse_port = "443"
-    server = "http://"+cse_ip+":"+cse_port+"/~/in-cse/in-name/"
-    ae = "Team35_Street_lighting_And_building_entrances_based_on_daylight"
-    cnt = "node_1"
+    # cse_ip = "onem2m.iiit.ac.in"
+    # server = "https://" + cse_ip + "/~/in-cse/in-name/"
+    # ae = "Team35_Street_lighting_And_building_entrances_based_on_daylight"
+    # cnt = "node_1"
 
-    url = server + ae + "/" + cnt + "/"
-    payload = {
-        "m2m:cin": {
-            "cnf": "text/plain:0",
-            "con": value
-        }
-    }
-    headers = {
-        "X-M2M-Origin": "admin:admin",
-        "Content-Type": "application/json;ty=4",
-        "Content-Length": "100",
-        "Connection": "close"
-    }
+    # url = server + ae + "/" + cnt + "/"
+    # payload = {
+    #     "m2m:cin": {
+    #         "cnf": "text/plain:0",
+    #         "con": "test"
+    #     }
+    # }
+    # headers = {
+    #     "X-M2M-Origin": "admin:admin",
+    #     "Content-Type": "application/json;ty=4",
+    #     "Content-Length": "100",
+    #     "Connection": "close"
+    # }
 
-    r = requests.post(url, data=json.dumps(payload), headers=headers)
-    print(r)
+    # r = requests.post(url, data=json.dumps(payload), headers=headers)
+    # call_bot(url)
+    # call_bot("Return value from onem2m server is "  + str(r))
 
 def checkreq(request):
 	'''
@@ -140,7 +140,7 @@ def checkreq(request):
 		try:
 		    send_post_to_onem2m(y , x)  # y is the value and x is the status
 		except Exception as e:
-		    call_bot(str(e))
+		    call_bot(str(e) +  "is the error")
 		    print("onem2m failed")
 
 		if reading_obj.status == 1 :
