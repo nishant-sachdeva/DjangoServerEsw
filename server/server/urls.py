@@ -17,7 +17,7 @@ from django.contrib import admin
 from django.urls import path
 from django.conf.urls import url
 
-from readings.views import home_view, checkreq
+from readings.views import home_view, checkreq, download_data
 # from readings.resources import ReadingResource
 # from readings.views import default_view
 # reading_resource = ReadingResource()
@@ -28,4 +28,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
 
     url(r'^reading/', checkreq, name='req'),
+    url(r'^download/', download_data, name='download_data'),
 ]

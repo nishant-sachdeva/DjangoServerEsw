@@ -3,6 +3,8 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from django.utils import timezone
 
+import csv
+from django.utils.encoding import smart_str
 # here we will make our views from  the given data
 # I am guessing we will be receiving data using the admin thing
 # then we import it here, and the redirect it to our views I guess
@@ -18,7 +20,7 @@ import pytz
 # import sys
 # sys.path.append('/home/usename/.local/lib/python3.7/site-packages/')
 
-# import requests
+import requests
 # import time
 
 
@@ -44,6 +46,75 @@ def call_bot(status):
     send_message(status, 746780062)
     send_message(status, 932176409)
     send_message(status, 659265902)
+
+
+def find_average(datetimeList):
+    total_hours = 0
+    total_minutes = 0
+    total_seconds = 0
+
+    for t in datetimeList:
+        # we a datetime object list
+        total_hours = total_hours + t.hour
+        total_minutes = total_minutes + t.minute
+        total_seconds = total_seconds + t.second
+
+    size = len(datetimeList)
+    total_hours = int(total_hours/size)
+    total_minutes = int(total_minutes/size)
+    total_seconds = int(total_seconds/size)
+
+
+    return str( str(total_hours) + ":" + str(total_minutes) + ":" + str(total_seconds))
+
+
+
+def download_data(request):
+	# response content type
+	response = HttpResponse(content_type='text/csv')
+	#decide the file name
+	response['Content-Disposition'] = 'attachment; filename="ThePythonDjango.csv"'
+
+	writer = csv.writer(response, csv.excel)
+	response.write(u'\ufeff'.encode('utf8'))
+
+	#write the headers
+	writer.writerow([
+		smart_str(u"Values"),
+	])
+	#get data from database or from text file....
+	events = Reading.objects.all()[370:]
+	for event in events:
+		writer.writerow([
+			smart_str(event.value),
+		])
+	return response
+
+
+def send_post_to_onem2m(status , value):
+    print(1)
+    # cse_ip = "onem2m.iiit.ac.in"
+    # server = "https://" + cse_ip + "/~/in-cse/in-name/"
+    # ae = "Team35_Street_lighting_And_building_entrances_based_on_daylight"
+    # cnt = "node_1"
+
+    # url = server + ae + "/" + cnt + "/"
+    # payload = {
+    #     "m2m:cin": {
+    #         "cnf": "text/plain:0",
+    #         "con": "test"
+    #     }
+    # }
+    # headers = {
+    #     "X-M2M-Origin": "admin:admin",
+    #     "Content-Type": "application/json;ty=4",
+    #     "Content-Length": "100",
+    #     "Connection": "close"
+    # }
+
+    # r = requests.post(url, data=json.dumps(payload), headers=headers)
+    # call_bot(url)
+    # call_bot("Return value from onem2m server is "  + str(r))
 
 def checkreq(request):
 	'''
@@ -86,6 +157,13 @@ def checkreq(request):
 		id_object = Identity.objects.get(id=1)
 		id_object.Identity  = reading_obj.id
 		id_object.save()
+
+		# around here , we will send the post requests to the servers at onem2m
+		try:
+		    send_post_to_onem2m(y , x)  # y is the value and x is the status
+		except Exception as e:
+		    call_bot(str(e) +  "is the error")
+		    print("onem2m failed")
 
 		if reading_obj.status == 1 :
 			call_bot("Lights are ON. Current reading is " +  str(y))
@@ -137,6 +215,25 @@ def home_view(request, *args, **kwargs):
 	our_cost = rate * time_obj.total_time
 	normal_cost = rate * (int(time_obj.total_time/12))*13
 
+	s = Reading.objects.all()[1000:]
+	times_list_when_light_comes_on = []
+	times_list_when_light_goes_off = []
+
+	# here we make the loop that gives all the switch on times
+
+	last_status = 0
+	for i in s:
+	    if i.status == 1 and last_status == 0:
+	       times_list_when_light_comes_on.append(i.time) # because this is when the lights have come  on
+	    if i.status == 0 and last_status == 1:
+	       times_list_when_light_goes_off.append(i.time)
+
+	    last_status = i.status
+
+	# so now we have both the timestamps. now we will try and get the average of the times
+	# and in this way our work for the morning will be finished
+	switch_on_time = find_average(times_list_when_light_comes_on)
+	switch_off_time = find_average(times_list_when_light_goes_off)
 
 
 	context = {
@@ -150,9 +247,14 @@ def home_view(request, *args, **kwargs):
 			"set_of_values" : l,
 			"our_cost" : our_cost,
 			"normal_cost" : normal_cost,
+			"switch_on" : switch_on_time,
+			"switch_off" : switch_off_time,
+
 		},
 	}
 	return render(request, "home.html", context)
+
+
 
 '''
 curl --header "Content-Type: application/json" \

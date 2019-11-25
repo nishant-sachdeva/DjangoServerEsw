@@ -19,6 +19,7 @@
             <h1>
               {% if list.status == 1 %} The light is<br/> <b>ON</b> {% else %} The light is
               <br/><b>OFF</b> {% endif %}
+
             </h1>
           </div>
         </div>
@@ -27,8 +28,13 @@
   </div>
 </div>
 
+
+<br><br><br>
+              <a href="download/" class="btn btn-default" target="_blank" > <h1>Download Readings</h1></a>
 <div class="progress  my-5">
-  <div class="progress-bar bg-info" role="progressbar" style="width: 100%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+  <div class="progress-bar bg-info" role="progressbar" style="width: 100%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+
+  </div>
 </div>
 
 <div class="container mt-5">
@@ -61,10 +67,20 @@
     <div class="row p-5">
       <div class="col text-white">
         <h2>
-          <b
-            >The light has been on for a total time of
-            {{ list.total_time }} hours</b
-          >
+          <b>The light has been on for a total time of
+            {{ list.total_time }} hours
+          </b>
+
+        <div class="col">
+        <h4 class="d-inline pr-3"><b>Average Switch ON time:</b></h4>
+        {{ list.switch_on }}
+        </div>
+
+        <div class="col">
+        <h4 class="d-inline pr-3"><b>Average Switch OFF time:</b></h4>
+        {{ list.switch_off }}
+      </div>
+
         </h2>
       </div>
     </div>
