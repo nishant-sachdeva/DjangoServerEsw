@@ -48,6 +48,15 @@ def call_bot(status):
     send_message(status, 659265902)
 
 
+def find_average(datetimeList):
+    # we have the list of all the timestamps.
+    # I am hoping we will be able to return the average time
+    avgTime=datetime.datetime.strftime(datetime.datetime.fromtimestamp(sum(map(datetime.datetime.timestamp,datetimeList))/len(datetimeList)),"%H:%M:%S")
+
+    return avgTime
+
+
+
 def download_data(request):
 	# response content type
 	response = HttpResponse(content_type='text/csv')
@@ -194,6 +203,25 @@ def home_view(request, *args, **kwargs):
 	our_cost = rate * time_obj.total_time
 	normal_cost = rate * (int(time_obj.total_time/12))*13
 
+	s = Reading.objects.all()[1000:]
+	times_list_when_light_comes_on = []
+	times_list_when_light_goes_off = []
+
+	# here we make the loop that gives all the switch on times
+
+	last_status = 0
+	for i in s:
+	    if i.status == 1 and last_status == 0:
+	       times_list_when_light_comes_on.append(i.time) # because this is when the lights have come  on
+	    if i.status == 0 and last_status == 1:
+	       times_list_when_light_goes_off.append(i.time)
+
+	    last_status = i.status
+
+	# so now we have both the timestamps. now we will try and get the average of the times
+	# and in this way our work for the morning will be finished
+	switch_on_time = find_average(times_list_when_light_comes_on)
+	switch_off_time = find_average(times_list_when_light_goes_off)
 
 
 	context = {
@@ -207,6 +235,9 @@ def home_view(request, *args, **kwargs):
 			"set_of_values" : l,
 			"our_cost" : our_cost,
 			"normal_cost" : normal_cost,
+			"switch_on" : switch_on_time,
+			"switch_off" : switch_off_time,
+
 		},
 	}
 	return render(request, "home.html", context)

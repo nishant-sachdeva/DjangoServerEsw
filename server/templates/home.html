@@ -67,10 +67,20 @@
     <div class="row p-5">
       <div class="col text-white">
         <h2>
-          <b
-            >The light has been on for a total time of
-            {{ list.total_time }} hours</b
-          >
+          <b>The light has been on for a total time of
+            {{ list.total_time }} hours
+          </b>
+
+        <div class="col">
+        <h4 class="d-inline pr-3"><b>Average Switch ON time:</b></h4>
+        {{ list.switch_on }}
+        </div>
+
+        <div class="col">
+        <h4 class="d-inline pr-3"><b>Average Switch OFF time:</b></h4>
+        {{ list.switch_off }}
+      </div>
+
         </h2>
       </div>
     </div>
