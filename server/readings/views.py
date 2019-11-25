@@ -49,11 +49,23 @@ def call_bot(status):
 
 
 def find_average(datetimeList):
-    # we have the list of all the timestamps.
-    # I am hoping we will be able to return the average time
-    avgTime=datetime.datetime.strftime(datetime.datetime.fromtimestamp(sum(map(datetime.datetime.timestamp,datetimeList))/len(datetimeList)),"%H:%M:%S")
+    total_hours = 0
+    total_minutes = 0
+    total_seconds = 0
 
-    return avgTime
+    for t in datetimeList:
+        # we a datetime object list
+        total_hours = total_hours + t.hour
+        total_minutes = total_minutes + t.minute
+        total_seconds = total_seconds + t.second
+
+    size = len(datetimeList)
+    total_hours = int(total_hours/size)
+    total_minutes = int(total_minutes/size)
+    total_seconds = int(total_seconds/size)
+
+
+    return str( str(total_hours) + ":" + str(total_minutes) + ":" + str(total_seconds))
 
 
 
