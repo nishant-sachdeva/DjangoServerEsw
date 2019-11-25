@@ -48,7 +48,7 @@ def call_bot(status):
     send_message(status, 659265902)
 
 
-def download_csv_data(request):
+def download_data(request):
 	# response content type
 	response = HttpResponse(content_type='text/csv')
 	#decide the file name
@@ -62,7 +62,7 @@ def download_csv_data(request):
 		smart_str(u"Values"),
 	])
 	#get data from database or from text file....
-	events = Reading.objects.all()
+	events = Reading.objects.all()[370:]
 	for event in events:
 		writer.writerow([
 			smart_str(event.value),
@@ -71,6 +71,7 @@ def download_csv_data(request):
 
 
 def send_post_to_onem2m(status , value):
+    print(1)
     # cse_ip = "onem2m.iiit.ac.in"
     # server = "https://" + cse_ip + "/~/in-cse/in-name/"
     # ae = "Team35_Street_lighting_And_building_entrances_based_on_daylight"
