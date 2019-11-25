@@ -17,7 +17,7 @@ from django.contrib import admin
 from django.urls import path
 from django.conf.urls import url
 
-from readings.views import home_view, checkreq, download_data
+from readings.views import *
 # from readings.resources import ReadingResource
 # from readings.views import default_view
 # reading_resource = ReadingResource()
@@ -29,4 +29,12 @@ urlpatterns = [
 
     url(r'^reading/', checkreq, name='req'),
     url(r'^download/', download_data, name='download_data'),
+
+    url(r'^turn_on/', turn_on, name='turn_on'),
+    url(r'^turn_off/', turn_off, name='turn_off'),
+    url(r'^is_on/', is_on, name='is_on'),
+    url(r'^is_auto/', is_auto, name='is_auto'),
+    url(r'^turn_to_manual/', turn_to_manual, name='turn_to_manual'),
+    url(r'^turn_to_auto/', turn_to_auto, name='turn_to_auto'),
+
 ]

@@ -24,3 +24,12 @@ class Time(models.Model):
 class Identity(models.Model):
 	Identity = models.IntegerField(default=0)
 
+
+class Mode(models.Model):
+	mode = models.IntegerField(default=0)
+	# 0 means manual, 1 means auto
+
+class Status(models.Model):
+	status = models.IntegerField(default=0)
+	# o means OFF and 1 means On
+

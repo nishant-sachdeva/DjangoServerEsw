@@ -1,6 +1,6 @@
 #! /usr/bin/env python3.7
 from django.shortcuts import render
-from django.http import HttpResponse
+from django.http import HttpResponse, JsonResponse
 from django.utils import timezone
 
 import csv
@@ -8,7 +8,7 @@ from django.utils.encoding import smart_str
 # here we will make our views from  the given data
 # I am guessing we will be receiving data using the admin thing
 # then we import it here, and the redirect it to our views I guess
-from .models import Reading, Time, Identity
+from .models import Reading, Time, Identity, Mode, Status
 
 import json
 
@@ -59,7 +59,15 @@ def find_average(datetimeList):
         total_minutes = total_minutes + t.minute
         total_seconds = total_seconds + t.second
 
+    # total_time = total_hours*3600 + total_minutes*60 + total_seconds
+
     size = len(datetimeList)
+    # average = (total_time/size) + 5*3600 + 30*60;
+
+    # total_seconds = int (average%60)
+    # total_minutes = int ((average/60)%60)
+    # total_hours = int(average/3600)
+
     total_hours = int(total_hours/size)
     total_minutes = int(total_minutes/size)
     total_seconds = int(total_seconds/size)
@@ -73,7 +81,7 @@ def download_data(request):
 	# response content type
 	response = HttpResponse(content_type='text/csv')
 	#decide the file name
-	response['Content-Disposition'] = 'attachment; filename="ThePythonDjango.csv"'
+	response['Content-Disposition'] = 'attachment; filename="Light_Readings.csv"'
 
 	writer = csv.writer(response, csv.excel)
 	response.write(u'\ufeff'.encode('utf8'))
@@ -81,12 +89,16 @@ def download_data(request):
 	#write the headers
 	writer.writerow([
 		smart_str(u"Values"),
+		smart_str(u"status"),
+		smart_str(u"time_stamps"),
 	])
 	#get data from database or from text file....
 	events = Reading.objects.all()[370:]
 	for event in events:
 		writer.writerow([
 			smart_str(event.value),
+			smart_str(event.status),
+			smart_str(str(event.time.hour) + ":" + str(event.time.minute)),
 		])
 	return response
 
@@ -176,6 +188,73 @@ def checkreq(request):
 		return HttpResponse("<h1>GET request intercepted successfully</h1>")
 
 
+
+def turn_on(request):
+	# switch mode to manual and switch status to on
+	mode_object = Mode.objects.get(id=1)
+	mode_object.mode = 0 # 0 means manual
+	mode_object.save()
+	# now we put in a section to do the light status to
+
+	status_object = Status.objects.get(id=1)
+	status_object.status = 1 # means it will be on now
+	status_object.save()
+	return HttpResponse("Lights have been turned ON manually")
+
+
+def turn_off(request):
+	# switch mode to manual and switch status to on
+	mode_object = Mode.objects.get(id=1)
+	mode_object.mode = 0 # 0 means manual
+	mode_object.save()
+	# now we put in a section to do the light status to
+
+	status_object = Status.objects.get(id=1)
+	status_object.status = 0 # means it will be off now
+	status_object.save()
+	return HttpResponse("Lights have been turned OFF manually")
+
+
+def is_on(request):
+	# return the current_status bit
+	# the idea is to return a json with a bit saying whether it is on or off
+	status_object = Status.objects.get(id = 1)
+	response = {
+		'status' : status_object.status
+	}
+	# this is the json that is suppossed to be returned
+	return JsonResponse(response)
+
+def is_auto(request):
+	# return the current mode bit
+	status_object = Status.objects.get(id=1)
+	current_status = status_object.status
+
+	mode_object = Mode.objects.get(id = 1)
+	current_mode = mode_object.mode
+
+	response = {
+		'mode' : current_mode,
+		'status' : current_status
+	}
+
+	return JsonResponse(response)
+
+
+def turn_to_manual(request):
+	# switch mode to manual
+
+	mode_object = Mode.objects.get(id=1)
+	mode_object.mode = 0
+	mode_object.save()
+
+def turn_to_auto(request):
+	#switch mode to auto
+	mode_object = Mode.objects.get(id=1)
+	mode_object.mode = 1
+	mode_object.save()
+
+
 def home_view(request, *args, **kwargs):
 	'''
 	so here is the deal for this function, we have the latest id, in case that dosen't work, we will have the default base.html page to take care of our things,
@@ -235,6 +314,10 @@ def home_view(request, *args, **kwargs):
 	switch_on_time = find_average(times_list_when_light_comes_on)
 	switch_off_time = find_average(times_list_when_light_goes_off)
 
+	mode_object = Mode.objects.get(id= 1)
+
+# 	status_object = Status.objects.get(id = 1)
+# 	stat = status_object.status
 
 	context = {
 		"list" : {
@@ -249,7 +332,9 @@ def home_view(request, *args, **kwargs):
 			"normal_cost" : normal_cost,
 			"switch_on" : switch_on_time,
 			"switch_off" : switch_off_time,
-
+            "mode":mode_object.mode,
+            "turn_on_list" : times_list_when_light_comes_on,
+            "turn_off_list" : times_list_when_light_goes_off,
 		},
 	}
 	return render(request, "home.html", context)
